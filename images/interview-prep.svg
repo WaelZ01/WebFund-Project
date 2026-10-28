@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Technical and behavioural interview preparation illustration">
+  <defs>
+    <linearGradient id="bgGradInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2430"/>
+      <stop offset="100%" stop-color="#273344"/>
+    </linearGradient>
+    <filter id="shadowInt" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0d131a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="540" rx="24" fill="url(#bgGradInt)"/>
+  <circle cx="680" cy="100" r="150" fill="#B8C0FF" opacity="0.07"/>
+  <circle cx="130" cy="440" r="160" fill="#8A94A6" opacity="0.08"/>
+
+  <!-- Video / Panel Interview Screen -->
+  <g filter="url(#shadowInt)">
+    <rect x="145" y="110" width="510" height="320" rx="18" fill="#EEF1F5" stroke="#8A94A6" stroke-width="2"/>
+    <!-- Top Browser / Video Bar -->
+    <rect x="145" y="110" width="510" height="42" rx="18" fill="#1B2430"/>
+    <rect x="145" y="134" width="510" height="18" fill="#1B2430"/>
+    <circle cx="172" cy="131" r="5.5" fill="#B8C0FF"/>
+    <circle cx="190" cy="131" r="5.5" fill="#8A94A6"/>
+    <circle cx="208" cy="131" r="5.5" fill="#EEF1F5"/>
+    <rect x="330" y="125" width="140" height="12" rx="6" fill="#273344"/>
+
+    <!-- Left Participant Card (Interviewer) -->
+    <rect x="175" y="174" width="215" height="185" rx="12" fill="#273344"/>
+    <circle cx="282" cy="242" r="32" fill="#8A94A6"/>
+    <circle cx="282" cy="232" r="12" fill="#1B2430"/>
+    <path d="M260 262 C260 247, 304 247, 304 262" fill="#1B2430"/>
+    <rect x="222" y="294" width="120" height="10" rx="5" fill="#EEF1F5"/>
+    <rect x="242" y="312" width="80" height="8" rx="4" fill="#B8C0FF"/>
+
+    <!-- Right Participant Card (Candidate) -->
+    <rect x="410" y="174" width="215" height="185" rx="12" fill="#1B2430" stroke="#B8C0FF" stroke-width="2.5"/>
+    <circle cx="517" cy="242" r="32" fill="#B8C0FF"/>
+    <circle cx="517" cy="232" r="12" fill="#1B2430"/>
+    <path d="M495 262 C495 247, 539 247, 539 262" fill="#1B2430"/>
+    <rect x="457" y="294" width="120" height="10" rx="5" fill="#EEF1F5"/>
+    <rect x="472" y="312" width="90" height="8" rx="4" fill="#8A94A6"/>
+
+    <!-- Bottom Controls Bar -->
+    <rect x="315" y="378" width="170" height="32" rx="16" fill="#DFE4EC"/>
+    <circle cx="355" cy="394" r="10" fill="#1B2430"/>
+    <circle cx="400" cy="394" r="10" fill="#B8C0FF"/>
+    <circle cx="445" cy="394" r="10" fill="#8A94A6"/>
+  </g>
+
+  <!-- Laptop Base -->
+  <path d="M95 430 L705 430 L680 452 L120 452 Z" fill="#8A94A6"/>
+  <rect x="345" y="430" width="110" height="7" rx="3.5" fill="#1B2430"/>
+
+  <!-- Floating Technical Question Bubble (Top Left) -->
+  <g filter="url(#shadowInt)">
+    <rect x="55" y="48" width="220" height="92" rx="16" fill="#B8C0FF"/>
+    <polygon points="125,140 148,140 132,160" fill="#B8C0FF"/>
+    <!-- Terminal / Code icon -->
+    <rect x="77" y="68" width="48" height="48" rx="10" fill="#1B2430"/>
+    <path d="M92 84 L102 92 L92 100" fill="none" stroke="#B8C0FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="106" y1="100" x2="115" y2="100" stroke="#EEF1F5" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="140" y="74" width="112" height="10" rx="5" fill="#1B2430"/>
+    <rect x="140" y="92" width="88" height="8" rx="4" fill="#273344"/>
+    <rect x="140" y="106" width="68" height="8" rx="4" fill="#273344"/>
+  </g>
+
+  <!-- Floating Behavioural STAR Method Bubble (Top Right) -->
+  <g filter="url(#shadowInt)">
+    <rect x="525" y="44" width="225" height="96" rx="16" fill="#1B2430" stroke="#B8C0FF" stroke-width="2.5"/>
+    <polygon points="645,140 668,140 655,160" fill="#1B2430"/>
+    <!-- Star Icon -->
+    <polygon points="568,66 575,81 592,83 580,95 583,111 568,103 553,111 556,95 544,83 561,81" fill="#B8C0FF"/>
+    <!-- 4 STAR bars -->
+    <rect x="610" y="66" width="115" height="9" rx="4.5" fill="#EEF1F5"/>
+    <rect x="610" y="82" width="95" height="8" rx="4" fill="#B8C0FF"/>
+    <rect x="610" y="96" width="105" height="8" rx="4" fill="#8A94A6"/>
+    <rect x="610" y="110" width="80" height="8" rx="4" fill="#B8C0FF"/>
+  </g>
+</svg>

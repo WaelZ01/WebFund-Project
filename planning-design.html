@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planning &amp; Design | Career Prep Hub</title>
+  <meta name="description" content="Five-layer planning, wireframes, mockups and style guide for Career Prep Hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="home.html"><i class="bi bi-mortarboard-fill me-2"></i>Career Prep Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="subtopic1.html">Career Paths</a></li>
+            <li class="nav-item"><a class="nav-link" href="subtopic2.html">CV Advice</a></li>
+            <li class="nav-item"><a class="nav-link" href="subtopic3.html">Interviews</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="planning-design.html">Planning &amp; Design</a></li>
+            <li class="nav-item"><a class="nav-link" href="ai-report.html">AI Report</a></li>
+            <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Documentation</p>
+      <h1>Planning &amp; Design</h1>
+      <p>How the website was planned using the five layers of UX design: Strategy, Scope, Structure, Skeleton and Surface.</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Five layers summary -->
+    <section aria-labelledby="layers-title">
+      <div class="container">
+        <h2 id="layers-title" class="mb-4">The five layers</h2>
+        <div class="table-responsive">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Layer</th><th scope="col">Decisions for this project</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1. Strategy</th><td>Informational website. Purpose: help ICT and Cybersecurity students at Bahrain Polytechnic prepare for internships and graduate jobs. Problem: students struggle to find specific, practical guidance and to prepare strong applications.</td></tr>
+              <tr><th scope="row">2. Scope</th><td>Seven pages, navigation menu, registration form with JavaScript validation, career guidance content, responsive layouts, planning documentation and AI documentation. HTML5, CSS3, Bootstrap 5, JavaScript ES6, no backend.</td></tr>
+              <tr><th scope="row">3. Structure</th><td>One home page plus three subtopics (career paths, CV advice, interview preparation), a planning page, an AI report and an overview. Every page shares one navigation bar.</td></tr>
+              <tr><th scope="row">4. Skeleton</th><td>Home: header, hero, introduction, topic cards, call to action, registration form, footer. Subpages: title, introduction, main content, tips, related links, footer. Bootstrap grid: 3 columns on desktop, 2 on tablet, 1 on mobile.</td></tr>
+              <tr><th scope="row">5. Surface</th><td>Vapour Chrome palette, Purple Purse for titles, system sans-serif for body text, icons, consistent cards with subtle shadows.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wireframes -->
+    <section class="section-alt" aria-labelledby="wire-title">
+      <div class="container">
+        <h2 id="wire-title" class="mb-2">Wireframes</h2>
+        <p class="mb-4">Layout plans made before the final styling. Dashed boxes show where content goes.</p>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h3 class="h5 mb-2">Home page (desktop)</h3>
+            <div class="wire" role="img" aria-label="Desktop wireframe of the home page: navigation, hero, introduction, three topic cards, call to action, registration form, footer">
+              <div class="nav-w">Logo &nbsp;|&nbsp; Home &middot; Topics &middot; Planning &middot; AI &middot; Overview</div>
+              <div class="hero-w">Hero: headline, text, two buttons</div>
+              <div>Introduction and project overview</div>
+              <div class="row-w"><span>Card 1</span><span>Card 2</span><span>Card 3</span></div>
+              <div>Call to action</div>
+              <div>Registration form</div>
+              <div class="nav-w">Footer</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5 mb-2">Subpage (desktop)</h3>
+            <div class="wire" role="img" aria-label="Desktop wireframe of a subpage: navigation, page title, main content, tips, related links, footer">
+              <div class="nav-w">Navigation</div>
+              <div class="hero-w">Page title and introduction</div>
+              <div>Main content sections</div>
+              <div>Examples and practical tips</div>
+              <div class="row-w"><span>Related 1</span><span>Related 2</span></div>
+              <div class="nav-w">Footer</div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="h5 mb-2">Home page (mobile)</h3>
+            <div class="wire mobile" role="img" aria-label="Mobile wireframe of the home page with stacked sections">
+              <div class="nav-w">Logo &nbsp; &#9776;</div>
+              <div class="hero-w">Hero</div>
+              <div>Introduction</div>
+              <div>Card 1</div>
+              <div>Card 2</div>
+              <div>Card 3</div>
+              <div>Call to action</div>
+              <div>Form</div>
+              <div class="nav-w">Footer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mockups -->
+    <section aria-labelledby="mock-title">
+      <div class="container">
+        <h2 id="mock-title" class="mb-3">Mockups</h2>
+        <div class="todo">
+          <strong>TO COMPLETE:</strong> Add your mockups here. Take screenshots of the finished pages (desktop, tablet and mobile) or export designs from the tool you used, save them in the <code>images</code> folder, and insert them with <code>&lt;img&gt;</code> tags and alt text. Mockups have not been created yet.
+        </div>
+      </div>
+    </section>
+
+    <!-- Style guide -->
+    <section class="section-alt" aria-labelledby="style-title">
+      <div class="container">
+        <h2 id="style-title" class="mb-4">Style guide</h2>
+
+        <h3 class="h5 mb-3">Colour palette (Vapour Chrome)</h3>
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-md-3"><div class="swatch" style="background:#EEF1F5"></div><p class="mb-0 mt-2"><strong>#EEF1F5</strong><br>Page background</p></div>
+          <div class="col-6 col-md-3"><div class="swatch" style="background:#1B2430"></div><p class="mb-0 mt-2"><strong>#1B2430</strong><br>Text, navigation, footer</p></div>
+          <div class="col-6 col-md-3"><div class="swatch" style="background:#8A94A6"></div><p class="mb-0 mt-2"><strong>#8A94A6</strong><br>Secondary buttons, icons, borders</p></div>
+          <div class="col-6 col-md-3"><div class="swatch" style="background:#B8C0FF"></div><p class="mb-0 mt-2"><strong>#B8C0FF</strong><br>Primary buttons, accents, active link</p></div>
+        </div>
+        <p class="field-hint">Soft greys with cool blue accents give the Vapour Chrome palette a clean, digital feel suited to technology and software topics.</p>
+
+        <h3 class="h5 mb-3 mt-4">Typography</h3>
+        <div class="table-responsive mb-4">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Use</th><th scope="col">Font</th><th scope="col">Size</th></tr></thead>
+            <tbody>
+              <tr><td>Titles (h1) and headings (h2, h3)</td><td>Purple Purse (Google Fonts)</td><td>h1 2&ndash;3rem, h2 1.5&ndash;2rem, h3 1.25rem</td></tr>
+              <tr><td>Body text, forms, buttons</td><td>System sans-serif</td><td>1rem, line height 1.6</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="h5 mb-3">Components</h3>
+        <div class="row g-3 align-items-center">
+          <div class="col-md-4"><a href="#" class="btn btn-clay" onclick="return false">Primary button</a></div>
+          <div class="col-md-4"><a href="#" class="btn btn-blue" onclick="return false">Secondary button</a></div>
+          <div class="col-md-4"><div class="card info-card"><div class="card-body">Card with white background, 14px radius and subtle shadow.</div></div></div>
+        </div>
+        <p class="mt-4 mb-0">Design reasoning: Purple Purse is a decorative display font, so it is used only for titles. Body text uses a plain sans-serif so longer passages stay readable.</p>
+      </div>
+    </section>
+
+    <!-- Testing -->
+    <section aria-labelledby="test-title">
+      <div class="container">
+        <h2 id="test-title" class="mb-3">Testing record</h2>
+        <div class="todo">
+          <strong>TO COMPLETE:</strong> Record your own tests below after opening the site in your browser. No test results have been entered here.
+        </div>
+        <div class="table-responsive">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Test</th><th scope="col">Expected result</th><th scope="col">Actual result</th><th scope="col">Pass / Fail</th></tr></thead>
+            <tbody>
+              <tr><td>First name with 2 characters</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Last name with 2 characters</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Mobile with 7 or 9 digits</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Email without @ or domain</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>All fields valid</td><td>Success message shown</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Navigation links on all 7 pages</td><td>Each link opens the correct page</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Mobile width (about 375px)</td><td>Content stacked, hamburger menu works</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>Tablet width (about 768px)</td><td>Cards in 2 columns</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" aria-labelledby="pd-related">
+      <div class="container">
+        <h2 id="pd-related" class="mb-3">Related pages</h2>
+        <a href="ai-report.html" class="btn btn-blue me-2 mb-2">AI Report</a>
+        <a href="overview.html" class="btn btn-clay mb-2">Overview</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <p class="display-font h5 mb-1">Career Prep Hub</p>
+          <p class="mb-0">A university assessment project for ICT and Cybersecurity students at Bahrain Polytechnic.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="home.html">Home</a></li>
+            <li class="list-inline-item"><a href="subtopic1.html">Career Paths</a></li>
+            <li class="list-inline-item"><a href="subtopic2.html">CV Advice</a></li>
+            <li class="list-inline-item"><a href="subtopic3.html">Interviews</a></li>
+            <li class="list-inline-item"><a href="planning-design.html">Planning</a></li>
+            <li class="list-inline-item"><a href="ai-report.html">AI Report</a></li>
+            <li class="list-inline-item"><a href="overview.html">Overview</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="small mb-0">&copy; <span class="js-year">2026</span> Career Prep Hub. Student project.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

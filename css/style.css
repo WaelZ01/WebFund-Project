@@ -1,0 +1,227 @@
+/* ==========================================================
+   Career Prep Hub - shared design system
+   Vapour Chrome palette: #EEF1F5 #1B2430 #8A94A6 #B8C0FF
+   ========================================================== */
+:root {
+  --sand: #EEF1F5;
+  --ink: #1B2430;
+  --blue: #8A94A6;
+  --clay: #B8C0FF;
+  --white: #FFFFFF;
+  --sand-dark: #DFE4EC;
+  --shadow: 0 4px 14px rgba(27, 36, 48, 0.12);
+  --radius: 14px;
+  --font-title: "Purple Purse", Georgia, serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Typography: display font for titles only */
+h1, h2, h3, .navbar-brand, .display-font {
+  font-family: var(--font-title);
+  font-weight: 400;
+  line-height: 1.25;
+}
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+h3 { font-size: 1.25rem; }
+h4, h5, h6 { font-family: var(--font-body); font-weight: 700; }
+
+a { color: var(--ink); text-decoration-color: var(--blue); }
+a:hover { color: var(--blue); }
+
+/* Skip link and focus */
+.skip-link {
+  position: absolute; left: -999px; top: 0;
+  background: var(--ink); color: var(--sand); padding: .5rem 1rem; z-index: 2000;
+}
+.skip-link:focus { left: 0; color: var(--sand); }
+:focus-visible { outline: 3px solid var(--clay); outline-offset: 2px; }
+
+/* Navbar */
+.site-nav { background: var(--ink); padding: .6rem 0; }
+.site-nav .navbar-brand { color: var(--sand); font-size: 1.25rem; }
+.site-nav .navbar-nav { gap: .4rem; }
+.site-nav .nav-link { color: var(--sand); padding: .5rem .85rem; border-radius: 8px; }
+.site-nav .nav-link:hover { background: rgba(238, 241, 245, .12); color: var(--white); }
+.site-nav .nav-link.active { background: var(--clay); color: var(--ink); font-weight: 600; }
+.site-nav .navbar-toggler { border-color: rgba(238, 241, 245, .6); }
+.site-nav .navbar-toggler-icon { filter: invert(1); }
+
+/* Buttons */
+.btn-clay {
+  --bs-btn-color: var(--ink);
+  --bs-btn-bg: var(--clay);
+  --bs-btn-border-color: var(--clay);
+  --bs-btn-hover-color: var(--sand);
+  --bs-btn-hover-bg: var(--ink);
+  --bs-btn-hover-border-color: var(--ink);
+  --bs-btn-active-color: var(--sand);
+  --bs-btn-active-bg: var(--ink);
+  --bs-btn-active-border-color: var(--ink);
+  background: var(--clay); color: var(--ink); border: 2px solid var(--clay);
+  font-weight: 600; border-radius: 10px; padding: .6rem 1.4rem;
+}
+.btn-clay:hover,
+.btn-clay:focus-visible,
+.btn-clay:active { background: var(--ink); border-color: var(--ink); color: var(--sand); }
+
+.btn-blue {
+  --bs-btn-color: var(--ink);
+  --bs-btn-bg: var(--blue);
+  --bs-btn-border-color: var(--blue);
+  --bs-btn-hover-color: var(--sand);
+  --bs-btn-hover-bg: var(--ink);
+  --bs-btn-hover-border-color: var(--ink);
+  --bs-btn-active-color: var(--sand);
+  --bs-btn-active-bg: var(--ink);
+  --bs-btn-active-border-color: var(--ink);
+  background: var(--blue); color: var(--ink); border: 2px solid var(--blue);
+  font-weight: 600; border-radius: 10px; padding: .6rem 1.4rem;
+}
+.btn-blue:hover,
+.btn-blue:focus-visible,
+.btn-blue:active { background: var(--ink); border-color: var(--ink); color: var(--sand); }
+
+.btn-outline-sand {
+  --bs-btn-color: var(--sand);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--sand);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-hover-bg: var(--sand);
+  --bs-btn-hover-border-color: var(--sand);
+  --bs-btn-active-color: var(--ink);
+  --bs-btn-active-bg: var(--sand);
+  --bs-btn-active-border-color: var(--sand);
+  color: var(--sand); border: 2px solid var(--sand); border-radius: 10px;
+  font-weight: 600; padding: .6rem 1.4rem;
+}
+.btn-outline-sand:hover,
+.btn-outline-sand:focus-visible,
+.btn-outline-sand:active { background: var(--sand); border-color: var(--sand); color: var(--ink); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--ink) 0%, #2a3748 60%, var(--blue) 140%);
+  color: var(--sand);
+  padding: 5rem 0;
+}
+.hero .lead { color: var(--sand); max-width: 38rem; }
+.hero-icon-panel {
+  background: rgba(238, 241, 245, .08);
+  border: 2px solid rgba(238, 241, 245, .25);
+  border-radius: var(--radius);
+  padding: 1.25rem; text-align: center;
+}
+.hero-icon-panel i { font-size: 5rem; color: var(--clay); }
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+}
+.feature-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 2px solid var(--sand-dark);
+}
+.eyebrow {
+  text-transform: uppercase; letter-spacing: .12em; font-size: .8rem;
+  font-weight: 700; color: var(--clay);
+}
+
+/* Page header for subpages */
+.page-header { background: var(--ink); color: var(--sand); padding: 3rem 0; }
+.page-header p { max-width: 42rem; margin-bottom: 0; }
+
+/* Sections */
+section { padding: 3.5rem 0; }
+.section-alt { background: var(--sand-dark); }
+
+/* Cards */
+.topic-card, .info-card {
+  background: var(--white); border: 0; border-radius: var(--radius);
+  box-shadow: var(--shadow); height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.topic-card:hover { transform: translateY(-4px); box-shadow: 0 8px 22px rgba(27, 36, 48, .18); }
+.card-icon {
+  width: 56px; height: 56px; border-radius: 12px; display: inline-flex;
+  align-items: center; justify-content: center; font-size: 1.6rem;
+  background: var(--blue); color: var(--ink); margin-bottom: 1rem;
+}
+.card-icon.clay { background: var(--clay); color: var(--ink); }
+
+/* CTA */
+.cta {
+  background: var(--ink); color: var(--sand); text-align: center; padding: 3.5rem 0;
+}
+.cta h2 { color: var(--sand); }
+
+/* Form */
+.form-panel {
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 2rem;
+}
+.form-label { font-weight: 600; }
+.form-control { border: 2px solid var(--blue); border-radius: 10px; padding: .6rem .8rem; }
+.form-control:focus { border-color: var(--ink); box-shadow: 0 0 0 .25rem rgba(184, 192, 255, .5); }
+.invalid-feedback { font-size: .9rem; font-weight: 500; }
+.field-hint { font-size: .85rem; color: #4b5565; }
+
+/* Placeholders for content the student still has to write */
+.todo {
+  border: 2px dashed var(--blue); background: rgba(184, 192, 255, .18);
+  border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1rem;
+}
+.todo strong { color: var(--ink); }
+
+/* Wireframes (planning-design page) */
+.wire {
+  background: var(--white); border: 2px solid var(--ink); border-radius: 8px;
+  padding: .75rem; font-size: .8rem; color: var(--ink);
+}
+.wire div { border: 1.5px dashed var(--blue); border-radius: 4px; padding: .4rem .6rem; margin-bottom: .4rem; text-align: center; background: var(--sand); }
+.wire .nav-w { background: var(--ink); color: var(--sand); }
+.wire .hero-w { padding: 1.4rem .6rem; background: var(--sand-dark); }
+.wire .row-w { display: flex; gap: .4rem; border: 0; padding: 0; background: none; }
+.wire .row-w span { flex: 1; border: 1.5px dashed var(--blue); border-radius: 4px; padding: .8rem .2rem; background: var(--sand); }
+.wire.mobile { max-width: 220px; }
+
+/* Swatches */
+.swatch { height: 80px; border-radius: 10px; border: 2px solid var(--ink); }
+
+/* Tables */
+.table-sand { --bs-table-bg: var(--white); }
+.table-sand thead th { background: var(--ink); color: var(--sand); font-family: var(--font-body); }
+
+/* Footer */
+.site-footer { background: var(--ink); color: var(--sand); padding: 2.5rem 0 1.5rem; }
+.site-footer a { color: var(--sand); }
+.site-footer a:hover { color: var(--clay); }
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .hero { padding: 3.5rem 0; }
+  section { padding: 2.5rem 0; }
+}
+@media (max-width: 575.98px) {
+  .form-panel { padding: 1.25rem; }
+  .btn-clay, .btn-blue, .btn-outline-sand { width: 100%; margin-bottom: .5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .topic-card { transition: none; }
+}
