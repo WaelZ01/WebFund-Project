@@ -49,7 +49,18 @@ a:hover { color: var(--blue); }
 
 /* Navbar */
 .site-nav { background: var(--ink); padding: .6rem 0; }
-.site-nav .navbar-brand { color: var(--sand); font-size: 1.25rem; }
+.site-nav .navbar-brand {
+  color: var(--sand);
+  font-size: 1.65rem;
+  display: inline-flex;
+  align-items: center;
+}
+.site-nav .navbar-brand:hover,
+.site-nav .navbar-brand:focus-visible { color: var(--clay); }
+.site-nav .navbar-brand i {
+  font-size: 1.85rem;
+  color: var(--clay);
+}
 .site-nav .navbar-nav { gap: .4rem; }
 .site-nav .nav-link { color: var(--sand); padding: .5rem .85rem; border-radius: 8px; }
 .site-nav .nav-link:hover { background: rgba(238, 241, 245, .12); color: var(--white); }
