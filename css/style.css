@@ -1,17 +1,17 @@
 /* ==========================================================
    Career Prep Hub - shared design system
-   Vapour Chrome palette: #EEF1F5 #1B2430 #8A94A6 #B8C0FF
+   Nordic Ocean palette: #F0F4F8 #102A43 #334E68 #38BDF8
    ========================================================== */
 :root {
-  --sand: #EEF1F5;
-  --ink: #1B2430;
-  --blue: #8A94A6;
-  --clay: #B8C0FF;
+  --sand: #F0F4F8;
+  --ink: #102A43;
+  --blue: #334E68;
+  --clay: #38BDF8;
   --white: #FFFFFF;
-  --sand-dark: #DFE4EC;
-  --shadow: 0 4px 14px rgba(27, 36, 48, 0.12);
+  --sand-dark: #D9E2EC;
+  --shadow: 0 4px 14px rgba(16, 42, 67, 0.10);
   --radius: 14px;
-  --font-title: "Purple Purse", Georgia, serif;
+  --font-title: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
@@ -28,7 +28,7 @@ body {
 /* Typography: display font for titles only */
 h1, h2, h3, .navbar-brand, .display-font {
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.25;
 }
 h1 { font-size: clamp(2rem, 5vw, 3rem); }
@@ -36,8 +36,8 @@ h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
 h3 { font-size: 1.25rem; }
 h4, h5, h6 { font-family: var(--font-body); font-weight: 700; }
 
-a { color: var(--ink); text-decoration-color: var(--blue); }
-a:hover { color: var(--blue); }
+a { color: var(--blue); text-decoration-color: var(--clay); }
+a:hover { color: var(--ink); }
 
 /* Skip link and focus */
 .skip-link {
@@ -63,9 +63,9 @@ a:hover { color: var(--blue); }
 }
 .site-nav .navbar-nav { gap: .4rem; }
 .site-nav .nav-link { color: var(--sand); padding: .5rem .85rem; border-radius: 8px; }
-.site-nav .nav-link:hover { background: rgba(238, 241, 245, .12); color: var(--white); }
+.site-nav .nav-link:hover { background: rgba(240, 244, 248, .12); color: var(--white); }
 .site-nav .nav-link.active { background: var(--clay); color: var(--ink); font-weight: 600; }
-.site-nav .navbar-toggler { border-color: rgba(238, 241, 245, .6); }
+.site-nav .navbar-toggler { border-color: rgba(240, 244, 248, .6); }
 .site-nav .navbar-toggler-icon { filter: invert(1); }
 
 /* Buttons */
@@ -87,21 +87,21 @@ a:hover { color: var(--blue); }
 .btn-clay:active { background: var(--ink); border-color: var(--ink); color: var(--sand); }
 
 .btn-blue {
-  --bs-btn-color: var(--ink);
+  --bs-btn-color: var(--white);
   --bs-btn-bg: var(--blue);
   --bs-btn-border-color: var(--blue);
-  --bs-btn-hover-color: var(--sand);
-  --bs-btn-hover-bg: var(--ink);
-  --bs-btn-hover-border-color: var(--ink);
-  --bs-btn-active-color: var(--sand);
-  --bs-btn-active-bg: var(--ink);
-  --bs-btn-active-border-color: var(--ink);
-  background: var(--blue); color: var(--ink); border: 2px solid var(--blue);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-hover-bg: var(--clay);
+  --bs-btn-hover-border-color: var(--clay);
+  --bs-btn-active-color: var(--ink);
+  --bs-btn-active-bg: var(--clay);
+  --bs-btn-active-border-color: var(--clay);
+  background: var(--blue); color: var(--white); border: 2px solid var(--blue);
   font-weight: 600; border-radius: 10px; padding: .6rem 1.4rem;
 }
 .btn-blue:hover,
 .btn-blue:focus-visible,
-.btn-blue:active { background: var(--ink); border-color: var(--ink); color: var(--sand); }
+.btn-blue:active { background: var(--clay); border-color: var(--clay); color: var(--ink); }
 
 .btn-outline-sand {
   --bs-btn-color: var(--sand);
@@ -122,14 +122,14 @@ a:hover { color: var(--blue); }
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--ink) 0%, #2a3748 60%, var(--blue) 140%);
+  background: linear-gradient(135deg, var(--ink) 0%, #1c3d5a 60%, var(--blue) 100%);
   color: var(--sand);
   padding: 5rem 0;
 }
 .hero .lead { color: var(--sand); max-width: 38rem; }
 .hero-icon-panel {
-  background: rgba(238, 241, 245, .08);
-  border: 2px solid rgba(238, 241, 245, .25);
+  background: rgba(240, 244, 248, .08);
+  border: 2px solid rgba(56, 189, 248, .35);
   border-radius: var(--radius);
   padding: 1.25rem; text-align: center;
 }
@@ -167,19 +167,20 @@ section { padding: 3.5rem 0; }
   box-shadow: var(--shadow); height: 100%;
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.topic-card:hover { transform: translateY(-4px); box-shadow: 0 8px 22px rgba(27, 36, 48, .18); }
+.topic-card:hover { transform: translateY(-4px); box-shadow: 0 8px 22px rgba(16, 42, 67, .16); }
 .card-icon {
   width: 56px; height: 56px; border-radius: 12px; display: inline-flex;
   align-items: center; justify-content: center; font-size: 1.6rem;
-  background: var(--blue); color: var(--ink); margin-bottom: 1rem;
+  background: var(--blue); color: var(--white); margin-bottom: 1rem;
 }
 .card-icon.clay { background: var(--clay); color: var(--ink); }
 
 /* CTA */
 .cta {
-  background: var(--ink); color: var(--sand); text-align: center; padding: 3.5rem 0;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--blue) 100%);
+  color: var(--sand); text-align: center; padding: 3.5rem 0;
 }
-.cta h2 { color: var(--sand); }
+.cta h2 { color: var(--white); }
 
 /* Form */
 .form-panel {
@@ -187,14 +188,14 @@ section { padding: 3.5rem 0; }
   box-shadow: var(--shadow); padding: 2rem;
 }
 .form-label { font-weight: 600; }
-.form-control { border: 2px solid var(--blue); border-radius: 10px; padding: .6rem .8rem; }
-.form-control:focus { border-color: var(--ink); box-shadow: 0 0 0 .25rem rgba(184, 192, 255, .5); }
+.form-control { border: 2px solid #9FB3C8; border-radius: 10px; padding: .6rem .8rem; }
+.form-control:focus { border-color: var(--blue); box-shadow: 0 0 0 .25rem rgba(56, 189, 248, .35); }
 .invalid-feedback { font-size: .9rem; font-weight: 500; }
-.field-hint { font-size: .85rem; color: #4b5565; }
+.field-hint { font-size: .85rem; color: #486581; }
 
 /* Placeholders for content the student still has to write */
 .todo {
-  border: 2px dashed var(--blue); background: rgba(184, 192, 255, .18);
+  border: 2px dashed var(--blue); background: rgba(56, 189, 248, .12);
   border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1rem;
 }
 .todo strong { color: var(--ink); }
