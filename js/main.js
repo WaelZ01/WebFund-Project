@@ -23,6 +23,18 @@ if (typeof document !== "undefined") {
       el.textContent = new Date().getFullYear();
     });
 
+    // Auto-start educational carousel on home page
+    const carouselEl = document.getElementById("careerCarousel");
+    if (carouselEl && typeof bootstrap !== "undefined" && bootstrap.Carousel) {
+      const carousel = new bootstrap.Carousel(carouselEl, {
+        interval: 3500,
+        ride: "carousel",
+        pause: false,
+        wrap: true
+      });
+      carousel.cycle();
+    }
+
     // Registration form (home page only)
     const form = document.getElementById("registerForm");
     if (!form) return;

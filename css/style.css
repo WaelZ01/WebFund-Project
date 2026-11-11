@@ -272,6 +272,86 @@ section { padding: 4rem 0; }
   border-bottom: 1px solid rgba(51, 78, 104, 0.1);
 }
 
+/* Bento Educational Carousel */
+.bento-carousel {
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+  box-shadow: var(--shadow-hover);
+  border: 2px solid rgba(56, 189, 248, 0.35);
+  background: var(--ink);
+}
+.bento-carousel .carousel-item {
+  height: 440px;
+  position: relative;
+}
+.bento-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.62) contrast(1.05);
+  transition: transform 5s ease;
+}
+.bento-carousel .carousel-item.active img {
+  transform: scale(1.04);
+}
+.carousel-glass-caption {
+  position: absolute;
+  left: 2.5rem;
+  right: 2.5rem;
+  bottom: 2.75rem;
+  max-width: 640px;
+  background: rgba(16, 42, 67, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  color: var(--sand);
+  text-align: left;
+  box-shadow: 0 12px 32px rgba(8, 22, 36, 0.45);
+}
+.carousel-glass-caption h3 {
+  color: var(--white);
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  margin-bottom: .4rem;
+}
+.carousel-glass-caption p {
+  margin-bottom: 0;
+  color: rgba(240, 244, 248, 0.9);
+  font-size: .96rem;
+}
+.bento-carousel .carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 6px;
+  border-radius: 999px;
+  background-color: var(--clay);
+  border: 0;
+}
+.bento-carousel .carousel-control-prev,
+.bento-carousel .carousel-control-next {
+  width: 56px;
+  opacity: 0.9;
+}
+.carousel-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(16, 42, 67, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clay);
+  font-size: 1.25rem;
+  transition: all .2s ease;
+}
+.bento-carousel .carousel-control-prev:hover .carousel-nav-btn,
+.bento-carousel .carousel-control-next:hover .carousel-nav-btn {
+  background: var(--clay);
+  color: var(--ink);
+}
+
 /* Bento Cards & Panels */
 .bento-panel {
   background: var(--white);
@@ -485,6 +565,8 @@ section { padding: 4rem 0; }
 @media (max-width: 575.98px) {
   .form-panel, .register-main, .register-aside { padding: 1.5rem; }
   .bento-mini-grid { grid-template-columns: 1fr; }
+  .bento-carousel .carousel-item { height: 360px; }
+  .carousel-glass-caption { left: 1rem; right: 1rem; bottom: 2.25rem; padding: 1rem 1.15rem; }
   .btn-clay, .btn-blue, .btn-outline-sand { width: 100%; margin-bottom: .5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
