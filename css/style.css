@@ -610,3 +610,13 @@ section { padding: 4rem 0; }
   html { scroll-behavior: auto; }
   .topic-card, .info-card, .btn-clay, .btn-blue { transition: none; }
 }
+
+/* Added for subtopic2 / subtopic3: checklist progress and practice tools */
+.progress { height: 1.15rem; background: var(--sand-dark); border: 1px solid var(--blue); border-radius: 999px; overflow: hidden; }
+.progress-bar { background: linear-gradient(90deg, var(--teal), var(--clay)); }
+.form-check-input { border: 2px solid var(--blue); }
+.form-check-input:checked { background-color: var(--clay); border-color: var(--clay); }
+.accordion-item { border: 1px solid rgba(170, 133, 82, 0.25); border-radius: 14px !important; overflow: hidden; margin-bottom: .65rem; box-shadow: var(--shadow); }
+.accordion-button { font-weight: 600; color: var(--ink); background: var(--white); }
+.accordion-button:not(.collapsed) { background: var(--sand-dark); color: var(--ink); box-shadow: none; }
+.accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(209, 128, 30, .25); }

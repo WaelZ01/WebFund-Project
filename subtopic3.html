@@ -46,16 +46,15 @@
   </div>
 
   <main id="main">
+    <!-- Main content -->
     <section aria-labelledby="s3-title">
       <div class="container">
-        <div class="bento-panel">
+        <div class="bento-panel mb-5">
           <div class="row align-items-center g-4">
             <div class="col-lg-7">
               <span class="step-badge mb-2 d-inline-block">01 &bull; Core Guide</span>
-              <h2 id="s3-title" class="mb-3">Main content</h2>
-              <div class="todo mb-0">
-                <strong>TO COMPLETE:</strong> Write the main content for this page (for example: researching the employer, technical questions, behavioural questions, questions to ask). Credit any sources you use.
-              </div>
+              <h2 id="s3-title" class="mb-3">Preparing for your interview</h2>
+              <p class="lead mb-0">Good interview performance is mostly preparation. If you know the employer, the role and your own projects well, you can answer calmly even when a question is unexpected.</p>
             </div>
             <div class="col-lg-5">
               <figure class="mb-0">
@@ -64,21 +63,173 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section-alt" aria-labelledby="s3-tips">
-      <div class="container">
-        <div class="bento-panel">
-          <span class="step-badge mb-2 d-inline-block">02 &bull; Actionable Advice</span>
-          <h2 id="s3-tips" class="mb-3">Examples and practical tips</h2>
-          <div class="todo mb-0">
-            <strong>TO COMPLETE:</strong> Add examples and practical tips.
+        <h3 class="mt-4 mb-3">Before the interview</h3>
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card info-card"><div class="card-body p-4">
+              <span class="card-icon" aria-hidden="true"><i class="bi bi-search"></i></span>
+              <h4 class="h5">Research the employer</h4>
+              <p class="mb-0">Read their website and recent news. Understand what they do, who their customers are and which technologies the job advert mentions.</p>
+            </div></article>
           </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card info-card"><div class="card-body p-4">
+              <span class="card-icon clay" aria-hidden="true"><i class="bi bi-card-checklist"></i></span>
+              <h4 class="h5">Match the job advert</h4>
+              <p class="mb-0">List the main requirements and write one example from your studies or projects for each. These become your answers.</p>
+            </div></article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card info-card"><div class="card-body p-4">
+              <span class="card-icon" aria-hidden="true"><i class="bi bi-arrow-repeat"></i></span>
+              <h4 class="h5">Revise and practise</h4>
+              <p class="mb-0">Review the topics on your CV, then practise answering out loud with a friend, lecturer or even a mirror.</p>
+            </div></article>
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-3">Technical questions</h3>
+        <p>For ICT and cybersecurity roles, expect questions on fundamentals. Interviewers usually care more about how you reason than whether you remember every detail. If you do not know, say so, then explain how you would find out. Select a question to see what a good answer covers.</p>
+
+        <div class="accordion" id="techAccordion">
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t1" aria-expanded="false" aria-controls="t1">What is the CIA triad?</button></h4>
+            <div id="t1" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body">Confidentiality (only authorised people can see data), integrity (data is accurate and not changed without permission) and availability (systems and data can be used when needed). A strong answer gives one example of each, such as encryption, hashing or backups.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t2" aria-expanded="false" aria-controls="t2">What is the difference between TCP and UDP?</button></h4>
+            <div id="t2" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body">TCP is connection-oriented and reliable: it sets up a connection, confirms delivery and keeps data in order. UDP is connectionless and faster with less overhead, but gives no delivery guarantee. Mention a use for each, for example web browsing for TCP and live video or voice for UDP.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t3" aria-expanded="false" aria-controls="t3">What is the difference between hashing and encryption?</button></h4>
+            <div id="t3" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body">Encryption is two-way: data is scrambled with a key and can be turned back into the original. Hashing is one-way: it produces a fixed-length fingerprint that cannot be reversed. Hashing suits password storage and integrity checks, while encryption suits protecting data in transit or at rest.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t4" aria-expanded="false" aria-controls="t4">What happens when you type a web address into a browser?</button></h4>
+            <div id="t4" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body">Walk through it in order: the browser asks DNS to turn the name into an IP address, opens a connection to the server (with TLS for HTTPS), sends an HTTP request, receives the response and renders the page. Showing the steps in order matters more than naming every protocol.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t5" aria-expanded="false" aria-controls="t5">An employee reports a suspicious email. What do you do?</button></h4>
+            <div id="t5" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body">Tell them not to click links or open attachments, and ask for the email to be forwarded or reported through the proper channel. Check the sender, links and headers, then follow the organisation's incident process: record it, block or remove the message if confirmed malicious and check whether anyone else received it or clicked.</div></div>
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-3">Behavioural questions and the STAR method</h3>
+        <p>Behavioural questions begin with phrases like "Tell me about a time when...". They test how you work with others and handle problems. The STAR method keeps your answer structured:</p>
+        <div class="row g-3 mb-3">
+          <div class="col-6 col-lg-3"><div class="card info-card"><div class="card-body p-4"><h4 class="h5"><span style="color:var(--clay)">S</span>ituation</h4><p class="mb-0">Briefly set the scene.</p></div></div></div>
+          <div class="col-6 col-lg-3"><div class="card info-card"><div class="card-body p-4"><h4 class="h5"><span style="color:var(--clay)">T</span>ask</h4><p class="mb-0">What you were responsible for.</p></div></div></div>
+          <div class="col-6 col-lg-3"><div class="card info-card"><div class="card-body p-4"><h4 class="h5"><span style="color:var(--clay)">A</span>ction</h4><p class="mb-0">What <em>you</em> did, step by step.</p></div></div></div>
+          <div class="col-6 col-lg-3"><div class="card info-card"><div class="card-body p-4"><h4 class="h5"><span style="color:var(--clay)">R</span>esult</h4><p class="mb-0">The outcome and what you learned.</p></div></div></div>
+        </div>
+        <p class="mb-0">Spend most of your time on the Action. Use "I" for your own contribution, and be honest about what the team did.</p>
+
+        <div class="bento-panel mt-5">
+          <h3 class="mb-3">Questions to ask the interviewer</h3>
+          <p>Almost every interview ends with "Do you have any questions for us?" Have two or three ready. Good examples:</p>
+          <ul class="mb-0">
+            <li class="mb-1">What would a typical first month in this role look like?</li>
+            <li class="mb-1">Which tools and technologies does the team use day to day?</li>
+            <li class="mb-1">How does the team support new graduates or interns to learn?</li>
+            <li>What are the next steps in the selection process?</li>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- Examples and practical tips -->
+    <section class="section-alt" aria-labelledby="s3-tips">
+      <div class="container">
+        <h2 id="s3-tips" class="mb-3">Examples and practical tips</h2>
+
+        <h3 class="mb-3">Example STAR answer</h3>
+        <div class="card info-card mb-4"><div class="card-body p-4">
+          <p class="mb-2"><strong>Question:</strong> Tell me about a time you solved a problem in a team project.</p>
+          <p class="mb-2"><strong>Situation:</strong> In a four-person web project, our contact form stopped working two days before the deadline.</p>
+          <p class="mb-2"><strong>Task:</strong> I was responsible for the JavaScript validation, so I needed to find the cause quickly.</p>
+          <p class="mb-2"><strong>Action:</strong> I used the browser developer tools to find an error caused by a mismatched element ID, fixed it and tested each field with valid and invalid input. I then added a short test checklist to our shared document so that the team could re-check after changes.</p>
+          <p class="mb-0"><strong>Result:</strong> The form worked again the same day, and the checklist helped us catch two more small bugs before submitting. I learned to test after every change, not just at the end.</p>
+        </div></div>
+
+        <h3 class="mb-3">Build your own STAR answer</h3>
+        <div class="form-panel mb-4">
+          <p class="field-hint">Fill in each box with a real experience. Your answer is combined below so you can read it aloud. Nothing is saved or sent.</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="starS" class="form-label">Situation</label>
+              <textarea class="form-control star-input" id="starS" rows="3" placeholder="Where and when? What was happening?"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="starT" class="form-label">Task</label>
+              <textarea class="form-control star-input" id="starT" rows="3" placeholder="What were you responsible for?"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="starA" class="form-label">Action</label>
+              <textarea class="form-control star-input" id="starA" rows="3" placeholder="What did you do, step by step?"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="starR" class="form-label">Result</label>
+              <textarea class="form-control star-input" id="starR" rows="3" placeholder="What happened? What did you learn?"></textarea>
+            </div>
+          </div>
+          <h4 class="h5 mt-4">Your answer</h4>
+          <p id="starPreview" class="p-3 border rounded mb-2" style="background:var(--sand)" aria-live="polite">Start typing above to see your answer here.</p>
+          <p id="starCount" class="field-hint mb-3">0 words. Aim for roughly 150 to 250 words, about one to two minutes when spoken.</p>
+          <button type="button" class="btn btn-blue me-2" id="starCopy">Copy answer</button>
+          <button type="button" class="btn btn-clay" id="starClear">Clear</button>
+          <span id="starMsg" class="ms-2 fw-semibold" role="status" aria-live="polite"></span>
+        </div>
+
+        <h3 class="mb-3">Practice question generator</h3>
+        <div class="form-panel mb-4">
+          <p class="field-hint">Press the button for a random question. Say your answer out loud before you reveal the tip.</p>
+          <p id="practiceQ" class="fs-5 fw-semibold" aria-live="polite">Press "New question" to start.</p>
+          <p id="practiceTip" class="d-none"></p>
+          <button type="button" class="btn btn-blue me-2" id="practiceNew">New question</button>
+          <button type="button" class="btn btn-clay" id="practiceReveal" disabled>Show tip</button>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="bento-panel">
+              <h3 class="h4">Before</h3>
+              <ul class="mb-0">
+                <li class="mb-2">Confirm the date, time, place or video link.</li>
+                <li class="mb-2">Print or save copies of your CV and have a notebook ready.</li>
+                <li class="mb-2">Plan your journey and aim to arrive early.</li>
+                <li>For online interviews, test your camera, microphone and internet, and pick a quiet place.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bento-panel">
+              <h3 class="h4">During</h3>
+              <ul class="mb-0">
+                <li class="mb-2">Dress smartly and greet everyone politely.</li>
+                <li class="mb-2">Listen to the whole question and pause to think.</li>
+                <li class="mb-2">Give examples from your own work rather than general statements.</li>
+                <li>Be honest. If you do not know something, explain how you would find out.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bento-panel">
+              <h3 class="h4">After</h3>
+              <ul class="mb-0">
+                <li class="mb-2">Send a short thank-you email within a day.</li>
+                <li class="mb-2">Write down the questions you were asked and how you answered.</li>
+                <li>Use what you learned to improve for the next interview, whatever the result.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="small mt-4 mb-0"><strong>About this content:</strong> this page gives general good-practice advice and fundamentals summaries written by the project team. It contains no external statistics. Every employer interviews differently, so use this as preparation rather than a script.</p>
+      </div>
+    </section>
+
+    <!-- Related links -->
     <section aria-labelledby="s3-related">
       <div class="container">
         <h2 id="s3-related" class="mb-3">Related pages</h2>
@@ -116,7 +267,7 @@
     <div class="container">
       <div class="row g-3 align-items-center">
         <div class="col-md-6">
-          <p class="display-font h5 mb-1"><i class="bi bi-mortarboard-fill me-2" style="color:var(--clay)"></i>Career Prep Hub</p>
+          <p class="display-font h5 mb-1"><i class="bi bi-mortarboard-fill me-2" style="color:var(--peach)"></i>Career Prep Hub</p>
           <p class="mb-0 small opacity-75">A university assessment project for ICT and Cybersecurity students at Bahrain Polytechnic.</p>
         </div>
         <div class="col-md-6 text-md-end">
@@ -138,5 +289,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/subtopic3.js"></script>
 </body>
 </html>
