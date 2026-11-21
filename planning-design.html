@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -58,15 +59,57 @@
               <tr><th scope="row">2. Scope</th><td>Seven pages, navigation menu, registration form with JavaScript validation, career guidance content, responsive layouts, planning documentation and AI documentation. HTML5, CSS3, Bootstrap 5, JavaScript ES6, no backend.</td></tr>
               <tr><th scope="row">3. Structure</th><td>One home page plus three subtopics (career paths, CV advice, interview preparation), a planning page, an AI report and an overview. Every page shares one navigation bar.</td></tr>
               <tr><th scope="row">4. Skeleton</th><td>Home: header, hero, introduction, topic cards, call to action, registration form, footer. Subpages: title, introduction, main content, tips, related links, footer. Bootstrap grid: 3 columns on desktop, 2 on tablet, 1 on mobile.</td></tr>
-              <tr><th scope="row">5. Surface</th><td>Terrazzo palette, liquid-glass floating capsule navigation bar, Outfit for titles, system sans-serif for body text, icons, consistent cards with subtle shadows.</td></tr>
+              <tr><th scope="row">5. Surface</th><td>Polytechnic Navy &amp; Cyan palette, liquid-glass floating capsule navigation bar, Outfit for titles, system sans-serif for body text, icons, consistent cards with subtle shadows.</td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
+
+    <!-- Planning documentation -->
+    <section class="section-alt" aria-labelledby="plan-title">
+      <div class="container">
+        <h2 id="plan-title" class="mb-2">Planning documentation</h2>
+        <p class="mb-4">What we decided before building, and how the design changed while we worked.</p>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="bento-panel h-100">
+              <h3 class="h5">Audience and need</h3>
+              <p class="mb-2"><strong>Who:</strong> ICT and Cybersecurity students at Bahrain Polytechnic preparing for internships and first jobs.</p>
+              <p class="mb-2"><strong>Need:</strong> practical, specific guidance on roles, CVs and interviews instead of generic advice.</p>
+              <p class="mb-0"><strong>Success:</strong> a student can find the right topic from the home page in one click and register their interest.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bento-panel h-100">
+              <h3 class="h5">Content plan</h3>
+              <ul class="mb-0">
+                <li><strong>Career Paths:</strong> entry-level roles and the skills each one needs.</li>
+                <li><strong>CV Advice:</strong> building a CV that gets read, with examples.</li>
+                <li><strong>Interviews:</strong> technical and behavioural preparation, with a STAR practice tool.</li>
+                <li><strong>Documentation pages:</strong> planning and design, AI report, overview.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bento-panel h-100">
+              <h3 class="h5">How the design evolved</h3>
+              <ol class="mb-0">
+                <li>Basic seven-page structure and navigation.</li>
+                <li>Nordic Ocean palette with the Outfit heading font.</li>
+                <li>Bento card layout and an auto-playing carousel on the home page.</li>
+                <li>Final Polytechnic Navy &amp; Cyan theme with a floating glass navigation bar.</li>
+                <li>Interactive CV and interview tools, then the remaining pages.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Wireframes -->
-    <section class="section-alt" aria-labelledby="wire-title">
+    <section aria-labelledby="wire-title">
       <div class="container">
         <h2 id="wire-title" class="mb-2">Wireframes</h2>
         <p class="mb-4">Layout plans made before the final styling. Dashed boxes show where content goes.</p>
@@ -113,29 +156,55 @@
     </section>
 
     <!-- Mockups -->
-    <section aria-labelledby="mock-title">
+    <section class="section-alt" aria-labelledby="mock-title">
       <div class="container">
-        <h2 id="mock-title" class="mb-3">Mockups</h2>
-        <div class="todo">
-          <strong>TO COMPLETE:</strong> Add your mockups here. Take screenshots of the finished pages (desktop, tablet and mobile) or export designs from the tool you used, save them in the <code>images</code> folder, and insert them with <code>&lt;img&gt;</code> tags and alt text. Mockups have not been created yet.
+        <h2 id="mock-title" class="mb-2">Mockups</h2>
+        <p class="mb-4">High-fidelity views of the finished pages at the three screen sizes we planned for. They are screenshots of the working site, taken in Chromium.</p>
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <img src="images/mockup-home-desktop.jpg" class="img-fluid rounded-4 border shadow-sm" alt="Desktop view of the home page: floating navigation bar, dark teal hero with the headline, an orange Explore career paths button and a laptop-and-shield illustration" loading="lazy">
+              <figcaption class="field-hint mt-2">Home page, desktop (1440 px wide).</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <img src="images/mockup-subpage-desktop.jpg" class="img-fluid rounded-4 border shadow-sm" alt="Desktop view of the Career Paths page with the same navigation bar and page header" loading="lazy">
+              <figcaption class="field-hint mt-2">Career Paths subpage, desktop (1440 px wide).</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-8 col-md-6">
+            <figure class="mb-0">
+              <img src="images/mockup-home-tablet.jpg" class="img-fluid rounded-4 border shadow-sm" alt="Tablet view of the home page: the navigation collapses into a menu button and the content fills the narrower width" loading="lazy">
+              <figcaption class="field-hint mt-2">Home page, tablet (768 px wide).</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <figure class="mb-0">
+              <img src="images/mockup-home-mobile.jpg" class="img-fluid rounded-4 border shadow-sm" alt="Mobile view of the home page: stacked hero text, full-width buttons and a hamburger menu" loading="lazy">
+              <figcaption class="field-hint mt-2">Home page, mobile (375 px wide).</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Style guide -->
-    <section class="section-alt" aria-labelledby="style-title">
+    <section aria-labelledby="style-title">
       <div class="container">
         <h2 id="style-title" class="mb-4">Style guide</h2>
 
-        <h3 class="h5 mb-3">Colour palette (Terrazzo)</h3>
+        <h3 class="h5 mb-3">Colour palette (Polytechnic Navy &amp; Cyan)</h3>
         <div class="row g-3 mb-4">
-          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#DACCC4"></div><p class="mb-0 mt-2"><strong>#DACCC4</strong><br>Page background &amp; warm stone</p></div>
-          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#374F4E"></div><p class="mb-0 mt-2"><strong>#374F4E</strong><br>Deep teal headers, text &amp; glass nav</p></div>
-          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#D1801E"></div><p class="mb-0 mt-2"><strong>#D1801E</strong><br>Primary buttons &amp; warm ochre accents</p></div>
-          <div class="col-6 col-md-6 col-lg"><div class="swatch" style="background:#EDBD95"></div><p class="mb-0 mt-2"><strong>#EDBD95</strong><br>Active nav pill &amp; soft peach highlights</p></div>
-          <div class="col-6 col-md-6 col-lg"><div class="swatch" style="background:#AA8552"></div><p class="mb-0 mt-2"><strong>#AA8552</strong><br>Earthy bronze borders &amp; accents</p></div>
+          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#F4F8FB"></div><p class="mb-0 mt-2"><strong>#F4F8FB</strong><br>Page background &amp; ice alabaster</p></div>
+          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#0A192F"></div><p class="mb-0 mt-2"><strong>#0A192F</strong><br>Deep Polytechnic navy text &amp; footer</p></div>
+          <div class="col-6 col-md-4 col-lg"><div class="swatch" style="background:#102A43"></div><p class="mb-0 mt-2"><strong>#102A43</strong><br>Ocean navy headers &amp; glass navbar</p></div>
+          <div class="col-6 col-md-6 col-lg"><div class="swatch" style="background:#0284C7"></div><p class="mb-0 mt-2"><strong>#0284C7</strong><br>Primary buttons &amp; ocean blue accents</p></div>
+          <div class="col-6 col-md-6 col-lg"><div class="swatch" style="background:#7DD3FC"></div><p class="mb-0 mt-2"><strong>#7DD3FC</strong><br>Active nav pill &amp; bright cyan highlights</p></div>
         </div>
-        <p class="field-hint">Warm, earthy Italian terrazzo tones (#DACCC4, #EDBD95, #AA8552) paired with deep mineral teal (#374F4E) and ochre gold (#D1801E) create an inviting, modern aesthetic.</p>
+        <p class="field-hint">Inspired by the Bahrain Polytechnic crest, deep navy (#0A192F, #102A43) paired with ocean blue (#0284C7), bright cyan (#7DD3FC) and ice alabaster (#F4F8FB) gives the hub a crisp academic technology identity.</p>
 
         <h3 class="h5 mb-3 mt-4">Typography</h3>
         <div class="table-responsive mb-4">
@@ -158,25 +227,83 @@
       </div>
     </section>
 
+    <!-- Design decisions -->
+    <section class="section-alt" aria-labelledby="dec-title">
+      <div class="container">
+        <h2 id="dec-title" class="mb-3">Design decisions</h2>
+        <div class="table-responsive">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Area</th><th scope="col">Decision</th><th scope="col">Reason</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Navigation</th><td>One floating glass navigation bar, identical on all seven pages, collapsing to a menu button on smaller screens.</td><td>Users always know where they are and can reach any page in one click.</td></tr>
+              <tr><th scope="row">Colour</th><td>Polytechnic Navy &amp; Cyan palette: ice alabaster background, deep navy for structure and text, ocean blue and cyan for actions.</td><td>A crisp, academic technology look inspired by Bahrain Polytechnic, with high-contrast buttons.</td></tr>
+              <tr><th scope="row">Typography</th><td>Outfit for headings, system sans-serif for body text.</td><td>Distinct headings, and body text that loads fast and stays easy to read.</td></tr>
+              <tr><th scope="row">Layout</th><td>Bootstrap 12-column grid with rounded cards.</td><td>Content groups are easy to scan and the layout adapts without extra code.</td></tr>
+              <tr><th scope="row">Registration form</th><td>Messages appear beside each field, the mobile field accepts digits only, and a clear success or error message follows submission.</td><td>Users see what to fix immediately instead of after the form is rejected.</td></tr>
+              <tr><th scope="row">Accessibility</th><td>Skip link, visible focus outline, image alt text, labelled navigation and form fields.</td><td>The site should work for keyboard and screen reader users as well as mouse users.</td></tr>
+              <tr><th scope="row">Technology</th><td>HTML5, CSS3 (variables in one stylesheet), Bootstrap 5.3, JavaScript ES6, no backend.</td><td>Matches the brief, and one stylesheet made theme changes quick.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive plan -->
+    <section aria-labelledby="resp-title">
+      <div class="container">
+        <h2 id="resp-title" class="mb-3">Responsive plan</h2>
+        <div class="table-responsive">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Device</th><th scope="col">Width</th><th scope="col">Layout</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Mobile</th><td>Under 768 px</td><td>One column, stacked buttons, hamburger menu.</td></tr>
+              <tr><th scope="row">Tablet</th><td>768 &ndash; 991 px</td><td>Cards in two columns, hamburger menu.</td></tr>
+              <tr><th scope="row">Desktop</th><td>992 px and above</td><td>Cards in three columns, full navigation bar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colour contrast -->
+    <section class="section-alt" aria-labelledby="contrast-title">
+      <div class="container">
+        <h2 id="contrast-title" class="mb-2">Colour contrast check</h2>
+        <p class="mb-3">Contrast ratios calculated with the WCAG formula. Normal text needs 4.5:1 to meet level AA.</p>
+        <div class="table-responsive">
+          <table class="table table-sand align-middle">
+            <thead><tr><th scope="col">Combination</th><th scope="col">Ratio</th><th scope="col">Result</th></tr></thead>
+            <tbody>
+              <tr><td>Dark navy text (#0A192F) on page background (#F4F8FB)</td><td>16.45:1</td><td>Pass (AAA)</td></tr>
+              <tr><td>Ice alabaster (#F4F8FB) on ocean navy header (#102A43)</td><td>13.28:1</td><td>Pass (AAA)</td></tr>
+              <tr><td>Dark navy text (#0A192F) on cyan active pill (#7DD3FC)</td><td>11.12:1</td><td>Pass (AAA)</td></tr>
+              <tr><td>White (#FFFFFF) on primary blue button (#0284C7)</td><td>4.60:1</td><td>Pass (AA)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Testing -->
     <section aria-labelledby="test-title">
       <div class="container">
-        <h2 id="test-title" class="mb-3">Testing record</h2>
-        <div class="todo">
-          <strong>TO COMPLETE:</strong> Record your own tests below after opening the site in your browser. No test results have been entered here.
-        </div>
+        <h2 id="test-title" class="mb-2">Testing record</h2>
+        <p class="mb-3">Tested on 19 November 2026 by running the real pages in Chromium and entering the inputs listed below.</p>
         <div class="table-responsive">
           <table class="table table-sand align-middle">
             <thead><tr><th scope="col">Test</th><th scope="col">Expected result</th><th scope="col">Actual result</th><th scope="col">Pass / Fail</th></tr></thead>
             <tbody>
-              <tr><td>First name with 2 characters</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Last name with 2 characters</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Mobile with 7 or 9 digits</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Email without @ or domain</td><td>Error message shown, form not submitted</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>All fields valid</td><td>Success message shown</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Navigation links on all 7 pages</td><td>Each link opens the correct page</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Mobile width (about 375px)</td><td>Content stacked, hamburger menu works</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
-              <tr><td>Tablet width (about 768px)</td><td>Cards in 2 columns</td><td>TO COMPLETE</td><td>TO COMPLETE</td></tr>
+              <tr><td>First name with 2 characters</td><td>Error message shown, form not submitted</td><td>&ldquo;First name must be at least 3 characters.&rdquo; and the form was not submitted.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Last name with 2 characters</td><td>Error message shown, form not submitted</td><td>&ldquo;Last name must be at least 3 characters.&rdquo; and the form was not submitted.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Mobile with 7 digits</td><td>Error message shown, form not submitted</td><td>&ldquo;Mobile number must be exactly 8 digits.&rdquo; and the form was not submitted.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Mobile with 9 digits</td><td>Error message shown, form not submitted</td><td>Same error message shown and the form was not submitted.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Email without @ (alice.example.com)</td><td>Error message shown, form not submitted</td><td>&ldquo;Please enter a valid email address.&rdquo; shown.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Email without domain (alice@example)</td><td>Error message shown, form not submitted</td><td>Same email error shown.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>All fields valid</td><td>Success message shown</td><td>&ldquo;Thank you, Alice! Your registration was received.&rdquo; shown and the form cleared.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Navigation and footer links on all 7 pages</td><td>Each link opens an existing page</td><td>All 7 navigation links on every page point to existing files. No broken links found.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Mobile width (375 px)</td><td>Content stacked, hamburger menu works</td><td>Menu button opens and shows all 7 links. No horizontal scrolling on any of the 7 pages.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Tablet width (768 px)</td><td>Cards in 2 columns</td><td>Topic cards displayed in 2 columns. No horizontal scrolling on any page.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
+              <tr><td>Desktop width (1280 px)</td><td>Cards in 3 columns, full navigation bar</td><td>Topic cards displayed in 3 columns.</td><td><span class="badge text-bg-success">Pass</span></td></tr>
             </tbody>
           </table>
         </div>

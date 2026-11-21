@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Overview | Career Prep Hub</title>
-  <meta name="description" content="Project overview for Career Prep Hub.">
+  <meta name="description" content="Complete project overview, requirement analysis, site map, user journey, wireframes, mockups, style guide, responsive plan and AI documentation for Career Prep Hub.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -39,83 +40,574 @@
 
   <div class="page-header">
     <div class="container">
-      <p class="eyebrow"><i class="bi bi-grid-1x2-fill"></i> Summary</p>
-      <h1>Project Overview</h1>
-      <p>A short summary of what Career Prep Hub is, who it is for and what it offers.</p>
+      <p class="eyebrow"><i class="bi bi-grid-1x2-fill"></i> Complete Documentation</p>
+      <h1>Project Overview &amp; Technical Documentation</h1>
+      <p>Comprehensive specification covering project objectives, requirement analysis, site architecture, wireframes for all seven pages, mockups, UI style guide, responsive plan and AI documentation.</p>
     </div>
   </div>
 
   <main id="main">
+    <!-- 1. Project Overview -->
     <section aria-labelledby="ov-title">
       <div class="container">
-        <div class="bento-panel">
-          <span class="step-badge mb-2 d-inline-block">Project Summary</span>
-          <h2 id="ov-title" class="mb-3">About the project</h2>
-          <p>Career Prep Hub is an informational website for ICT and Cybersecurity students at Bahrain Polytechnic. It gathers practical guidance on career paths, CVs and interviews to help students prepare for internships and graduate jobs.</p>
-          <div class="todo mb-0">
-            <strong>TO COMPLETE:</strong> Add your own summary: real-world relevance, what you learned, limitations, and future improvements.
+        <span class="step-badge mb-2 d-inline-block">Section 01</span>
+        <h2 id="ov-title" class="mb-4">1. Project Overview</h2>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="bento-panel dark d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 framed-card-title mb-3"><i class="bi bi-compass-fill"></i> Career Prep Hub Summary</h3>
+                <p class="mb-3"><strong>Website Title:</strong> Career Prep Hub</p>
+                <p class="mb-3"><strong>Website Category:</strong> Informational &amp; Educational Website</p>
+                <p class="mb-0"><strong>Target Audience:</strong> Undergraduate ICT and Cybersecurity students at Bahrain Polytechnic preparing for industry internships and entry-level graduate roles.</p>
+              </div>
+              <div class="mt-4 pt-3 border-top border-light border-opacity-10 small">
+                <i class="bi bi-globe2 me-1" style="color:var(--peach)"></i> Designed for practical use beyond the classroom to bridge coursework and employment.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="bento-panel">
+              <h3 class="h5 mb-2">Problem Statement</h3>
+              <p>ICT and Cybersecurity students complete rigorous technical labs in networking, programming and security, yet many struggle when applying for internships or graduate jobs. Online career advice is often generic, written for experienced engineers abroad, and fails to explain how students in Bahrain can turn university modules and lab coursework into compelling CVs and confident interview answers.</p>
+
+              <h3 class="h5 mt-4 mb-2">Project Objectives &amp; Real-World Relevance</h3>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>Centralise tailored career guidance:</strong> Explain six core ICT and cybersecurity career paths (SOC Analyst, Network/Cloud Engineer, Software Developer, Security Tester, Systems Support and GRC Analyst) and map them to Polytechnic lab skills.</li>
+                <li class="mb-2"><strong>Provide interactive self-assessment tools:</strong> Help students actively evaluate their readiness through a career-path matcher, an 8-point CV checklist, a live STAR answer builder and a practice interview question generator.</li>
+                <li class="mb-2"><strong>Demonstrate front-end engineering best practices:</strong> Implement a responsive 7-page architecture using HTML5, CSS3 custom variables, Bootstrap 5.3 and ES6 client-side form validation.</li>
+                <li><strong>Limitations &amp; future improvements:</strong> The site currently operates as a client-side static application without a database. Future iterations will darken the ochre button tone to exceed 4.5:1 WCAG AA contrast on small text and connect the registration form to a backend student mailing list.</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section-alt" aria-labelledby="ov-pages">
-      <div class="container">
-        <h2 id="ov-pages" class="mb-4">Pages in this website</h2>
+        <!-- Pages directory -->
+        <h3 class="h5 mt-5 mb-3">Pages in this website</h3>
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="home.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon"><i class="bi bi-house-door-fill"></i></span><span class="step-badge">01</span></div>
-                <h3 class="h5">Home</h3>
-                <p class="mb-0">Introduction, topics and registration form.</p>
+                <div class="card-top-row"><span class="card-icon"><i class="bi bi-house-door-fill"></i></span><span class="step-badge">Page 01</span></div>
+                <h4 class="h5">Home</h4>
+                <p class="mb-0">Hero, introduction, educational carousel, topic cards and validated registration form.</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="subtopic1.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-signpost-split-fill"></i></span><span class="step-badge">02</span></div>
-                <h3 class="h5">Career Paths</h3>
-                <p class="mb-0">Roles and skills in ICT and cybersecurity.</p>
+                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-signpost-split-fill"></i></span><span class="step-badge">Page 02</span></div>
+                <h4 class="h5">Career Paths</h4>
+                <p class="mb-0">Six entry-level ICT &amp; cybersecurity roles, skills comparison table and interactive role matcher.</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="subtopic2.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon"><i class="bi bi-file-earmark-person-fill"></i></span><span class="step-badge">03</span></div>
-                <h3 class="h5">CV &amp; Application Advice</h3>
-                <p class="mb-0">Presenting your skills clearly.</p>
+                <div class="card-top-row"><span class="card-icon"><i class="bi bi-file-earmark-person-fill"></i></span><span class="step-badge">Page 03</span></div>
+                <h4 class="h5">CV &amp; Application Advice</h4>
+                <p class="mb-0">CV structure, project bullet formula, cover letters and interactive 8-item readiness checklist.</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="subtopic3.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-chat-dots-fill"></i></span><span class="step-badge">04</span></div>
-                <h3 class="h5">Interview Preparation</h3>
-                <p class="mb-0">Technical and behavioural questions.</p>
+                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-chat-dots-fill"></i></span><span class="step-badge">Page 04</span></div>
+                <h4 class="h5">Interview Preparation</h4>
+                <p class="mb-0">Technical Q&amp;A accordion, STAR method guide, live STAR builder and practice question generator.</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="planning-design.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon"><i class="bi bi-layers-fill"></i></span><span class="step-badge">05</span></div>
-                <h3 class="h5">Planning &amp; Design</h3>
-                <p class="mb-0">Five layers, wireframes and style guide.</p>
+                <div class="card-top-row"><span class="card-icon"><i class="bi bi-layers-fill"></i></span><span class="step-badge">Page 05</span></div>
+                <h4 class="h5">Planning &amp; Design</h4>
+                <p class="mb-0">Five UX layers, design evolution, wireframes, mockups, style guide and testing record.</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <a class="card info-card text-decoration-none" href="reflection-ai-report.html">
               <div class="card-body p-4">
-                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-cpu-fill"></i></span><span class="step-badge">06</span></div>
-                <h3 class="h5">AI Report</h3>
-                <p class="mb-0">AI documentation and reflection.</p>
+                <div class="card-top-row"><span class="card-icon clay"><i class="bi bi-cpu-fill"></i></span><span class="step-badge">Page 06</span></div>
+                <h4 class="h5">Reflection &amp; AI Report</h4>
+                <p class="mb-0">AI tools summary, team reflection, lessons learned and ethical considerations.</p>
               </div>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Requirement Analysis -->
+    <section class="section-alt" aria-labelledby="req-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Section 02</span>
+        <h2 id="req-title" class="mb-4">2. Requirement Analysis</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="bento-panel">
+              <h3 class="h5 mb-3"><i class="bi bi-gear-fill me-2" style="color:var(--clay)"></i>Functional Requirements</h3>
+              <div class="table-responsive">
+                <table class="table table-sand align-middle mb-0">
+                  <thead><tr><th scope="col">Requirement</th><th scope="col">Description in Career Prep Hub</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">User Registration</th><td>Registration form on <code>home.html</code> collecting First Name, Last Name, Mobile Number and Email Address.</td></tr>
+                    <tr><th scope="row">Form Validation</th><td>JavaScript validation enforcing First Name (&ge;3 characters), Last Name (&ge;3 characters), Mobile Number (exactly 8 digits) and valid Email format, with clear success and error messages.</td></tr>
+                    <tr><th scope="row">Navigation System</th><td>Shared floating liquid-glass navigation bar and footer across all 7 pages with active page highlighting and mobile hamburger menu.</td></tr>
+                    <tr><th scope="row">Interactive Features</th><td>Auto-playing educational carousel on <code>home.html</code>, Career Path role matcher on <code>subtopic1.html</code>, 8-item CV readiness checklist with progress bar on <code>subtopic2.html</code>, and Technical Q&amp;A accordion, STAR answer builder and practice question generator on <code>subtopic3.html</code>.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bento-panel">
+              <h3 class="h5 mb-3"><i class="bi bi-shield-check me-2" style="color:var(--clay)"></i>Non-Functional Requirements</h3>
+              <div class="table-responsive">
+                <table class="table table-sand align-middle mb-0">
+                  <thead><tr><th scope="col">Requirement</th><th scope="col">Description in Career Prep Hub</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Performance</th><td>Single shared stylesheet (<code>css/style.css</code>), lightweight vector SVGs, compressed local images with <code>loading="lazy"</code> and fast page loads.</td></tr>
+                    <tr><th scope="row">Accessibility</th><td>Semantic HTML5 tags, skip-to-content link, visible <code>:focus-visible</code> outlines, descriptive image <code>alt</code> text, <code>aria-live</code> status messages and <code>prefers-reduced-motion</code> support.</td></tr>
+                    <tr><th scope="row">Security</th><td>Input sanitization on the mobile number field (digits only) and strict client-side processing where no personal student data is stored or transmitted externally.</td></tr>
+                    <tr><th scope="row">Usability</th><td>Clear visual hierarchy, consistent Terrazzo colour theme, intuitive card layouts and immediate inline feedback beside each form field.</td></tr>
+                    <tr><th scope="row">Responsiveness</th><td>Adapts seamlessly across Desktop (&ge;992 px), Tablet (768&ndash;991 px) and Mobile (&lt;768 px) screens using the Bootstrap 5 grid system and CSS media queries.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Site Map & 4. User Journey Map -->
+    <section aria-labelledby="sitemap-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Sections 03 &amp; 04</span>
+        <h2 id="sitemap-title" class="mb-4">3. Site Map &amp; 4. User Journey Map</h2>
+
+        <!-- Visual Site Map -->
+        <div class="bento-panel mb-4">
+          <h3 class="h5 mb-3">Visual Site Map (7-Page Hierarchy)</h3>
+          <p class="mb-3">Every page is reachable in one click from the global floating navigation bar and footer. The home page acts as the central entry point:</p>
+          <div class="wire p-3" role="img" aria-label="Site map diagram showing Home Page at the top level branching into three Career Subtopic pages and three Project Documentation pages">
+            <div class="nav-w fw-bold py-2 mb-3">Level 0 (Entry Point): Page 1 &mdash; Home Page (home.html)<br><span class="fw-normal small">Hero &bull; Welcome &amp; Project Overview &bull; Educational Carousel &bull; Topic Cards &bull; CTA &bull; Registration Form</span></div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="hero-w fw-bold mb-2">Core Career Guidance Subtopics</div>
+                <div class="mb-2"><strong>Page 2: Career Paths (subtopic1.html)</strong><br>6 ICT/Cyber Roles &bull; Skills Table &bull; Role Matcher</div>
+                <div class="mb-2"><strong>Page 3: CV &amp; Application Advice (subtopic2.html)</strong><br>6 CV Sections &bull; Bullet Formula &bull; 8-Item Readiness Checklist</div>
+                <div class="mb-0"><strong>Page 4: Interview Preparation (subtopic3.html)</strong><br>Technical Accordion &bull; STAR Builder &bull; Question Generator</div>
+              </div>
+              <div class="col-md-6">
+                <div class="hero-w fw-bold mb-2">Project &amp; Technical Documentation</div>
+                <div class="mb-2"><strong>Page 5: Planning &amp; Design (planning-design.html)</strong><br>5 UX Layers &bull; Wireframes &bull; Mockups &bull; Style Guide &bull; Testing</div>
+                <div class="mb-2"><strong>Page 6: Reflection &amp; AI Report (reflection-ai-report.html)</strong><br>3 AI Tools &bull; 553-Word Team Reflection &bull; Ethics</div>
+                <div class="mb-0"><strong>Page 7: Overview (overview.html)</strong><br>Requirements &bull; Site Map &bull; 7 Wireframes &bull; AI Prompt Log</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User Journey Map -->
+        <div class="bento-panel">
+          <h3 class="h5 mb-3">4. User Journey Map (Entry to Exit)</h3>
+          <p class="mb-3">How a final-year Bahrain Polytechnic ICT or Cybersecurity student interacts with Career Prep Hub:</p>
+          <div class="table-responsive">
+            <table class="table table-sand align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Page Visited</th>
+                  <th scope="col">User Action</th>
+                  <th scope="col">System Response &amp; Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1. Entry &amp; Discovery</th>
+                  <td><code>home.html</code></td>
+                  <td>Lands on the hero banner, scans the 4-tile project overview and watches the educational carousel.</td>
+                  <td>Understands the site is tailored for Bahrain Polytechnic students and clicks <em>Explore career paths</em>.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2. Role Exploration</th>
+                  <td><code>subtopic1.html</code></td>
+                  <td>Reads the 6 role cards, compares skills in the table and clicks an interest in the interactive matcher.</td>
+                  <td>Matcher highlights a recommended track (e.g., SOC Analyst) and lists which lab skills to put on a CV.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3. CV Preparation</th>
+                  <td><code>subtopic2.html</code></td>
+                  <td>Reviews the project bullet formula, compares weak vs. strong bullets and ticks items in the CV checklist.</td>
+                  <td>Live progress bar updates from 0% to 100% and confirms when all 8 CV readiness criteria are met.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4. Interview Practice</th>
+                  <td><code>subtopic3.html</code></td>
+                  <td>Expands technical questions in the accordion, drafts a STAR story and tests themselves with the question generator.</td>
+                  <td>Combines the STAR inputs with a live word counter, copies the answer and reveals interview tips on demand.</td>
+                </tr>
+                <tr>
+                  <th scope="row">5. Registration &amp; Exit</th>
+                  <td><code>home.html#register</code></td>
+                  <td>Returns to the Home page registration form, enters name, 8-digit mobile and email, and clicks <em>Register now</em>.</td>
+                  <td>JavaScript validates each field in real time, displays a personalised confirmation banner and resets the form cleanly.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Low-Fidelity Wireframes (All 7 Pages) -->
+    <section class="section-alt" aria-labelledby="all-wires-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Section 06</span>
+        <h2 id="all-wires-title" class="mb-2">6. Low-Fidelity Wireframes (All Seven Pages)</h2>
+        <p class="mb-4">Structural layout plans created for all seven pages before applying the final Terrazzo surface styling.</p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 1: Home (home.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 1 Home: floating navbar, 2-column hero, 2-column welcome and overview bento, carousel, 3 topic cards, CTA banner, 2-column registration form, footer">
+              <div class="nav-w">Logo &nbsp;|&nbsp; 7-Link Floating Navbar</div>
+              <div class="hero-w">Hero: Headline + CTA | Illustration</div>
+              <div class="row-w"><span>Welcome Panel</span><span>2x2 Overview</span></div>
+              <div>Auto-Playing Educational Carousel</div>
+              <div class="row-w"><span>Topic 1</span><span>Topic 2</span><span>Topic 3</span></div>
+              <div>Call to Action Banner</div>
+              <div class="row-w"><span>Benefits</span><span>Registration Form</span></div>
+              <div class="nav-w mb-0">Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 2: Career Paths (subtopic1.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 2 Career Paths: navbar, page header, intro panel with illustration, 6 role cards, skills comparison table, interactive role matcher, tips and mistakes panels, related links, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: Career Paths</div>
+              <div class="row-w"><span>Role Intro</span><span>Career Graphic</span></div>
+              <div class="row-w"><span>Role 1</span><span>Role 2</span><span>Role 3</span></div>
+              <div class="row-w"><span>Role 4</span><span>Role 5</span><span>Role 6</span></div>
+              <div>Skills &amp; Certifications Table</div>
+              <div>Interactive Career Path Matcher</div>
+              <div class="row-w"><span>Practical Tips</span><span>Mistakes</span></div>
+              <div class="nav-w mb-0">Related Pages &amp; Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 3: CV Advice (subtopic2.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 3 CV Advice: navbar, page header, intro with CV graphic, 6 CV section cards, projects and cover letter panels, weak vs strong table, 8-item interactive checklist with progress bar, tips, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: CV &amp; Application Advice</div>
+              <div class="row-w"><span>CV Intro</span><span>CV Illustration</span></div>
+              <div class="row-w"><span>Sec 1</span><span>Sec 2</span><span>Sec 3</span></div>
+              <div class="row-w"><span>Projects Formula</span><span>Cover Letter</span></div>
+              <div>Weak vs. Strong Bullet Table</div>
+              <div>8-Item CV Checklist + Progress Bar</div>
+              <div class="row-w"><span>Practical Tips</span><span>Mistakes</span></div>
+              <div class="nav-w mb-0">Related Pages &amp; Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 4: Interviews (subtopic3.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 4 Interviews: navbar, page header, intro with interview graphic, 3 prep cards, 5-item technical accordion, 4 STAR cards, interactive STAR builder, practice question generator, before/during/after columns, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: Interview Preparation</div>
+              <div class="row-w"><span>Prep Intro</span><span>Interview SVG</span></div>
+              <div class="row-w"><span>Research</span><span>Match</span><span>Practise</span></div>
+              <div>5-Question Technical Accordion</div>
+              <div class="row-w"><span>S</span><span>T</span><span>A</span><span>R</span></div>
+              <div>Interactive STAR Answer Builder</div>
+              <div>Practice Question Generator</div>
+              <div class="nav-w mb-0">Before/During/After &amp; Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 5: Planning &amp; Design (planning-design.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 5 Planning and Design: navbar, page header, 5 layers table, 3 planning panels, wireframes, 4 mockup screenshots, style guide swatches, design decisions table, testing record table, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: Planning &amp; Design</div>
+              <div>5 Layers of UX Table</div>
+              <div class="row-w"><span>Audience</span><span>Content</span><span>Evolution</span></div>
+              <div class="row-w"><span>Desktop Wire</span><span>Subpage</span><span>Mobile</span></div>
+              <div class="row-w"><span>Desktop Mockups</span><span>Tablet/Mobile</span></div>
+              <div>Style Guide &amp; Design Decisions</div>
+              <div>11-Row Testing Record Table</div>
+              <div class="nav-w mb-0">Related Pages &amp; Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="h6 fw-bold mb-2">Page 6: AI Report (reflection-ai-report.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 6 Reflection and AI Report: navbar, page header, AI utilisation table for 3 tools, verification checks, project reflection, lessons learned list, team collaboration, ethical considerations, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: AI Documentation &amp; Reflection</div>
+              <div>AI Utilisation Report (3 AI Tools Table)</div>
+              <div>4-Question Verification Method</div>
+              <div>Project Reflection Narrative</div>
+              <div>Lessons Learned &amp; Team Collaboration</div>
+              <div>Ethical Considerations &amp; Future Improvements</div>
+              <div class="nav-w mb-0">Related Pages &amp; Footer</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <h3 class="h6 fw-bold mb-2">Page 7: Overview (overview.html)</h3>
+            <div class="wire" role="img" aria-label="Wireframe of Page 7 Overview: navbar, page header, project overview and 6 page cards, functional and non-functional requirements, visual site map and user journey, 7 wireframes, mockups, style guide, responsive plan, AI prompt documentation table, footer">
+              <div class="nav-w">Floating Navbar</div>
+              <div class="hero-w">Page Header: Project Overview</div>
+              <div class="row-w"><span>Project Summary</span><span>Objectives</span></div>
+              <div class="row-w"><span>Functional Req</span><span>Non-Functional</span></div>
+              <div>Visual Site Map &amp; User Journey Table</div>
+              <div class="row-w"><span>7 Page Wireframes</span><span>4 Mockups</span></div>
+              <div>UI Style Guide &amp; Responsive Plan</div>
+              <div>AI Utilization Plan &amp; Prompt Log Table</div>
+              <div class="nav-w mb-0">Ethical Practices &amp; Footer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. High-Fidelity Mockups -->
+    <section aria-labelledby="ov-mockups-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Section 07</span>
+        <h2 id="ov-mockups-title" class="mb-2">7. High-Fidelity Mockups</h2>
+        <p class="mb-4">High-fidelity renders of the implemented website demonstrating layout, the Terrazzo colour scheme, the floating liquid-glass capsule navigation bar and responsive user interface design.</p>
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <figure class="bento-panel mb-0">
+              <img src="images/mockup-home-desktop.jpg" class="img-fluid rounded-3 border" alt="High-fidelity desktop mockup of the Home page showing the floating glass capsule navbar, deep teal hero section, Terrazzo buttons and bento overview cards" loading="lazy">
+              <figcaption class="field-hint mt-2"><strong>Desktop Layout (1440 px):</strong> Home page hero, floating liquid-glass navbar and 2-column Bento overview.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="bento-panel mb-0">
+              <img src="images/mockup-subpage-desktop.jpg" class="img-fluid rounded-3 border" alt="High-fidelity desktop mockup of the Career Paths subpage showing consistent header, breadcrumb badge and 3-column role cards" loading="lazy">
+              <figcaption class="field-hint mt-2"><strong>Subpage Layout (1440 px):</strong> Career Paths page demonstrating consistent navigation, typography and card grid.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center align-items-center">
+          <div class="col-sm-8 col-md-6">
+            <figure class="bento-panel mb-0 text-center">
+              <img src="images/mockup-home-tablet.jpg" class="img-fluid rounded-3 border" alt="High-fidelity tablet mockup at 768 pixels showing 2-column layout and collapsed navigation button" loading="lazy">
+              <figcaption class="field-hint mt-2"><strong>Tablet Layout (768 px):</strong> Two-column card adaptation and collapsible menu button.</figcaption>
+            </figure>
+          </div>
+          <div class="col-7 col-sm-4 col-md-3">
+            <figure class="bento-panel mb-0 text-center">
+              <img src="images/mockup-home-mobile.jpg" class="img-fluid rounded-3 border" alt="High-fidelity mobile mockup at 375 pixels showing single-column stacked layout and full-width buttons" loading="lazy">
+              <figcaption class="field-hint mt-2"><strong>Mobile Layout (375 px):</strong> Single-column stack and full-width touch buttons.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. UI Style Guide & 9. Responsive Design Plan -->
+    <section class="section-alt" aria-labelledby="ov-style-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Sections 08 &amp; 09</span>
+        <h2 id="ov-style-title" class="mb-4">8. UI Style Guide &amp; 9. Responsive Design Plan</h2>
+
+        <div class="bento-panel mb-4">
+          <h3 class="h5 mb-3">Colour Palette (Polytechnic Navy &amp; Cyan System)</h3>
+          <div class="row g-3 mb-3">
+            <div class="col-6 col-md-4 col-lg">
+              <div class="swatch" style="background:#0A192F"></div>
+              <p class="mb-0 mt-2 small"><strong>Primary Dark: #0A192F</strong><br>Deep Polytechnic Navy (Body text, dark cards, footer)</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="swatch" style="background:#102A43"></div>
+              <p class="mb-0 mt-2 small"><strong>Primary Structure: #102A43</strong><br>Ocean Navy (Hero, page headers, liquid-glass navbar, secondary buttons)</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="swatch" style="background:#F4F8FB"></div>
+              <p class="mb-0 mt-2 small"><strong>Secondary Surface: #F4F8FB / #E2ECF5</strong><br>Ice Alabaster &amp; Cool Silver (Page background &amp; alternating sections)</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg">
+              <div class="swatch" style="background:#0284C7"></div>
+              <p class="mb-0 mt-2 small"><strong>Accent Color 1: #0284C7</strong><br>Ocean Blue (Primary CTA buttons, checkboxes, focus rings)</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg">
+              <div class="swatch" style="background:#7DD3FC"></div>
+              <p class="mb-0 mt-2 small"><strong>Accent Color 2: #7DD3FC</strong><br>Bright Polytechnic Cyan (Active nav capsule pill, icon highlights, badges)</p>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-lg-6">
+              <h3 class="h5 mb-2">Typography</h3>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>Heading Font:</strong> <code>Outfit</code> (Google Fonts, weights 600 &amp; 700) &mdash; <code>h1</code>: <code>clamp(2.15rem, 5vw, 3.25rem)</code>, <code>h2</code>: <code>clamp(1.6rem, 3.5vw, 2.15rem)</code>, <code>h3</code>: <code>1.3rem</code>.</li>
+                <li><strong>Body Font:</strong> System sans-serif stack (<code>system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif</code>) at <code>1rem</code> (16 px) with <code>1.65</code> line height for comfortable reading.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h5 mb-2">UI Components</h3>
+              <ul class="mb-0">
+                <li class="mb-1"><strong>Navigation Bar:</strong> Sticky floating capsule (<code>border-radius: 999px</code>) with liquid-glass blur (<code>backdrop-filter: blur(22px) saturate(180%)</code>).</li>
+                <li class="mb-1"><strong>Buttons:</strong> Pill-shaped buttons (<code>.btn-clay</code> ochre primary, <code>.btn-blue</code> deep teal secondary, <code>.btn-outline-sand</code> glass outline).</li>
+                <li class="mb-1"><strong>Cards:</strong> Rounded 20 px white Bento cards (<code>.info-card</code>, <code>.topic-card</code>) with a 4 px top gradient accent bar and lift-on-hover shadow.</li>
+                <li><strong>Forms:</strong> Rounded 12 px inputs (<code>.form-control</code>) with warm stone background, ochre focus ring and inline <code>.invalid-feedback</code> alerts.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Responsive Design Plan -->
+        <div class="bento-panel">
+          <h3 class="h5 mb-3">9. Responsive Design Plan</h3>
+          <div class="table-responsive">
+            <table class="table table-sand align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Target Device</th>
+                  <th scope="col">Breakpoint / Viewport</th>
+                  <th scope="col">Grid &amp; Layout Behaviour</th>
+                  <th scope="col">Navigation &amp; Interactive Adjustments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><i class="bi bi-laptop me-1"></i> Desktop</th>
+                  <td><code>&ge; 992 px</code> (Bootstrap <code>lg</code> / <code>xl</code>)</td>
+                  <td>3-column card grids (<code>col-lg-4</code>), 2-column split Hero, Welcome Bento and Registration panels.</td>
+                  <td>Full horizontal floating liquid-glass capsule navbar with all 7 links visible; 440 px carousel height.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><i class="bi bi-tablet me-1"></i> Tablet</th>
+                  <td><code>768 px &ndash; 991 px</code> (Bootstrap <code>md</code>)</td>
+                  <td>2-column card grids (<code>col-md-6</code>); Hero and Registration panels stack vertically for readability.</td>
+                  <td>Capsule navbar collapses into a toggle button (<code>.navbar-toggler</code>) opening a rounded dropdown menu.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><i class="bi bi-phone me-1"></i> Mobile Devices</th>
+                  <td><code>&lt; 768 px</code> (Bootstrap <code>sm</code> / <code>xs</code>)</td>
+                  <td>Single-column vertical stack (<code>col-12</code>); mini-Bento grid switches to 1 column (<code>grid-template-columns: 1fr</code>).</td>
+                  <td>Buttons expand to <code>width: 100%</code> for easy thumb tapping; carousel height reduces to 360 px with compact glass captions.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. AI Utilization Plan & Phase 2 AI Documentation Table -->
+    <section aria-labelledby="ai-plan-title">
+      <div class="container">
+        <span class="step-badge mb-2 d-inline-block">Section 10 &amp; Phase 2</span>
+        <h2 id="ai-plan-title" class="mb-4">10. AI Utilization Plan &amp; AI-Assisted Development Documentation</h2>
+
+        <div class="bento-panel mb-4">
+          <h3 class="h5 mb-3">AI Utilization Plan</h3>
+          <p>To meet the mandatory requirement of using at least three AI-powered tools responsibly across the software development lifecycle, our group selected <strong>Claude (Anthropic)</strong>, <strong>Google Gemini</strong> and <strong>ChatGPT (OpenAI)</strong>:</p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="bento-mini-item h-100">
+                <i class="bi bi-terminal-plus"></i>
+                <h4 class="h6 fw-bold">1. Claude (Anthropic)</h4>
+                <p class="small mb-1"><strong>Purpose:</strong> Code review, ES6 validation logic, interactive tools and testing verification.</p>
+                <p class="small mb-0"><strong>Expected Outcome:</strong> Clean, bug-free JavaScript validation and accessible DOM updates.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bento-mini-item h-100">
+                <i class="bi bi-palette2"></i>
+                <h4 class="h6 fw-bold">2. Google Gemini</h4>
+                <p class="small mb-1"><strong>Purpose:</strong> UX planning, theme exploration, CSS liquid-glass styling and custom SVG/illustration generation.</p>
+                <p class="small mb-0"><strong>Expected Outcome:</strong> Cohesive Terrazzo UI design system and matching topic illustrations.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bento-mini-item h-100">
+                <i class="bi bi-chat-square-text"></i>
+                <h4 class="h6 fw-bold">3. ChatGPT (OpenAI)</h4>
+                <p class="small mb-1"><strong>Purpose:</strong> Drafting initial career-path summaries, CV bullet comparisons and STAR interview questions.</p>
+                <p class="small mb-0"><strong>Expected Outcome:</strong> Structured educational content drafts ready for local adaptation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2: AI Documentation Table -->
+        <div class="bento-panel mb-4">
+          <h3 class="h5 mb-3">Phase 2: AI Documentation Table (Prompts, Outputs &amp; Modifications)</h3>
+          <div class="table-responsive">
+            <table class="table table-sand align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">AI Tool</th>
+                  <th scope="col">Purpose</th>
+                  <th scope="col">Prompt Used</th>
+                  <th scope="col">Output Generated</th>
+                  <th scope="col">Modifications Made</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">ChatGPT</th>
+                  <td>Planning &amp; Content Drafting</td>
+                  <td>&ldquo;Outline a 7-page informational website for ICT and Cybersecurity students preparing for internships, including career paths, CV tips and interview questions.&rdquo;</td>
+                  <td>Produced a generic 7-page outline with US-focused salary figures and broad software engineering advice.</td>
+                  <td>Removed all unverifiable US salary claims, rewrote the content specifically for Bahrain Polytechnic ICT &amp; Cybersecurity modules (Packet Tracer, Wireshark, web projects) and added a weak-vs-strong CV bullet table.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Claude</th>
+                  <td>JavaScript Form Validation &amp; Bug Fixing</td>
+                  <td>&ldquo;Check our registration form validation in main.js for bugs with First Name (&ge;3 chars), Last Name (&ge;3 chars), Mobile (exactly 8 digits) and Email.&rdquo;</td>
+                  <td>Identified that the mobile field's digit-only listener ran after the validation listener and that <code>maxlength="8"</code> prevented testing the 9-digit error case.</td>
+                  <td>Reordered the event listeners in <code>js/main.js</code> so non-digits are stripped first, removed <code>maxlength="8"</code> so 7-digit and 9-digit test cases display the proper error message, and cleared <code>aria-invalid</code> on form reset.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Gemini</th>
+                  <td>UI Theme, Liquid Glass Navbar &amp; Illustrations</td>
+                  <td>&ldquo;Apply the Terrazzo colour palette (#DACCC4, #374F4E, #D1801E, #EDBD95, #AA8552), style the navbar as a floating liquid-glass capsule, and create matching illustrations.&rdquo;</td>
+                  <td>Generated CSS custom properties, a rounded capsule navbar with <code>backdrop-filter: blur(22px)</code>, an auto-playing Bootstrap carousel and custom vector SVG illustrations.</td>
+                  <td>Evaluated colour contrast ratios using the WCAG formula, adjusted hero top padding so the sticky capsule never overlaps headings, removed extra pill labels from the carousel and documented the 3.08:1 ochre button contrast finding.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Claude</th>
+                  <td>Interactive Subtopic Tools</td>
+                  <td>&ldquo;Create ES6 scripts for an 8-item CV readiness checklist with a progress bar on subtopic2.html and a STAR answer builder + practice question generator on subtopic3.html.&rdquo;</td>
+                  <td>Provided modular DOM scripts (<code>subtopic2.js</code> and <code>subtopic3.js</code>) using <code>aria-live="polite"</code> regions and clipboard copy support.</td>
+                  <td>Tested every button and keyboard interaction in Chromium, added a fallback message when clipboard permissions are unavailable and added an interactive role matcher (<code>subtopic1.js</code>) for Career Paths.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Ethical and legal best practices & media credits -->
+        <div class="bento-panel">
+          <h3 class="h5 mb-3">Ethical &amp; Legal Best Practices and Media Credits</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h4 class="h6 fw-bold">Ethical &amp; Legal Compliance</h4>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>Academic Integrity &amp; AI Transparency:</strong> All AI tools, prompts, outputs and human modifications are openly declared on this page and in <code>reflection-ai-report.html</code>.</li>
+                <li class="mb-2"><strong>Accuracy &amp; Fact-Checking:</strong> No fabricated statistics or unverified salary claims are published; technical explanations (CIA triad, TCP/UDP, hashing vs. encryption) were verified against course notes.</li>
+                <li class="mb-2"><strong>Data Privacy:</strong> The registration form and interactive tools run purely in the user's browser and explicitly notify users that no personal data is stored or transmitted.</li>
+                <li><strong>Accessibility &amp; Inclusivity:</strong> Built with keyboard navigation, screen-reader landmarks, high-contrast typography and reduced-motion support.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h4 class="h6 fw-bold">External Sources, Libraries &amp; Image Credits</h4>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>UI Framework &amp; Icons:</strong> <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 5.3.3</a> and <a href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons 1.11.3</a> (MIT Licence).</li>
+                <li class="mb-2"><strong>Typography:</strong> <a href="https://fonts.google.com/specimen/Outfit" target="_blank" rel="noopener">Outfit</a> font family via Google Fonts (Open Font Licence).</li>
+                <li class="mb-2"><strong>Carousel Photography:</strong> Royalty-free educational technology photographs sourced from <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a> (Unsplash Licence: <code>slide-cyber.jpg</code>, <code>slide-coding.jpg</code>, <code>slide-portfolio.jpg</code>, <code>slide-interview.jpg</code>).</li>
+                <li><strong>Custom Illustrations &amp; Mockups:</strong> Vector illustrations (<code>cv-example.svg</code>, <code>interview-prep.svg</code>), AI-assisted hero/career graphics (<code>hero-career.png</code>, <code>career-paths.png</code>) and Chromium viewport screenshots (<code>mockup-*.jpg</code>) created specifically for this project.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +618,7 @@
     <div class="container">
       <div class="row g-3 align-items-center">
         <div class="col-md-6">
-          <p class="display-font h5 mb-1"><i class="bi bi-mortarboard-fill me-2" style="color:var(--clay)"></i>Career Prep Hub</p>
+          <p class="display-font h5 mb-1"><i class="bi bi-mortarboard-fill me-2" style="color:var(--peach)"></i>Career Prep Hub</p>
           <p class="mb-0 small opacity-75">A university assessment project for ICT and Cybersecurity students at Bahrain Polytechnic.</p>
         </div>
         <div class="col-md-6 text-md-end">
