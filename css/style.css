@@ -598,11 +598,22 @@ section { padding: 4rem 0; }
   padding: 3rem 0 1.75rem;
   border-top: 2px solid rgba(125, 211, 252, 0.3);
 }
+.site-footer .list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .2rem;
+}
+.site-footer .list-inline-item:not(:last-child) {
+  margin-right: 0;
+}
 .site-footer a {
   color: rgba(244, 248, 251, 0.85);
   text-decoration: none;
-  padding: .25rem .5rem;
+  font-size: .92rem;
+  padding: .25rem .45rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 .site-footer a:hover { color: var(--peach); background: rgba(125, 211, 252, 0.12); }
 
@@ -613,6 +624,7 @@ section { padding: 4rem 0; }
   .page-header { padding: 6rem 0 2.75rem; }
   section { padding: 2.75rem 0; }
   .site-nav .navbar-nav { align-items: stretch; padding: .75rem 0 .25rem; }
+  .site-footer .list-inline { justify-content: flex-start; }
 }
 @media (max-width: 575.98px) {
   .form-panel, .register-main, .register-aside { padding: 1.5rem; }

@@ -252,13 +252,34 @@
     <section aria-labelledby="resp-title">
       <div class="container">
         <h2 id="resp-title" class="mb-3">Responsive plan</h2>
-        <div class="table-responsive">
-          <table class="table table-sand align-middle">
-            <thead><tr><th scope="col">Device</th><th scope="col">Width</th><th scope="col">Layout</th></tr></thead>
+        <div class="table-responsive mb-4">
+          <table class="table table-sand align-middle mb-0">
+            <thead><tr><th scope="col">Device</th><th scope="col">Width</th><th scope="col">Layout</th><th scope="col">Device Screenshot</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Mobile</th><td>Under 768 px</td><td>One column, stacked buttons, hamburger menu.</td></tr>
-              <tr><th scope="row">Tablet</th><td>768 &ndash; 991 px</td><td>Cards in two columns, hamburger menu.</td></tr>
-              <tr><th scope="row">Desktop</th><td>992 px and above</td><td>Cards in three columns, full navigation bar.</td></tr>
+              <tr>
+                <th scope="row"><i class="bi bi-phone me-1"></i> Mobile</th>
+                <td>Under 768 px</td>
+                <td>One column, stacked buttons, hamburger menu.</td>
+                <td>
+                  <img src="images/mockup-home-mobile.jpg" class="img-fluid rounded-3 border shadow-sm" style="max-height:190px" alt="Mobile screenshot of the home page at 375 px width showing single-column layout and hamburger menu" loading="lazy">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="bi bi-tablet me-1"></i> Tablet</th>
+                <td>768 &ndash; 991 px</td>
+                <td>Cards in two columns, hamburger menu.</td>
+                <td>
+                  <img src="images/mockup-home-tablet.jpg" class="img-fluid rounded-3 border shadow-sm" style="max-height:190px" alt="Tablet screenshot of the home page at 768 px width showing two-column layout and collapsed menu button" loading="lazy">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="bi bi-laptop me-1"></i> Desktop</th>
+                <td>992 px and above</td>
+                <td>Cards in three columns, full navigation bar.</td>
+                <td>
+                  <img src="images/mockup-home-desktop.jpg" class="img-fluid rounded-3 border shadow-sm" style="max-height:190px" alt="Desktop screenshot of the home page at 1440 px width showing full capsule navbar and three-column layout" loading="lazy">
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -318,15 +339,14 @@
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container">
-      <div class="row g-3">
-        <div class="col-md-6">
-          <p class="display-font h5 mb-1">Career Prep Hub</p>
-          <p class="mb-0">A university assessment project for ICT and Cybersecurity students at Bahrain Polytechnic.</p>
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-5">
+          <p class="display-font h5 mb-1"><i class="bi bi-mortarboard-fill me-2" style="color:var(--peach)"></i>Career Prep Hub</p>
+          <p class="mb-0 small opacity-75">A university assessment project for ICT and Cybersecurity students at Bahrain Polytechnic.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-7 text-lg-end">
           <ul class="list-inline mb-0">
             <li class="list-inline-item"><a href="home.html">Home</a></li>
             <li class="list-inline-item"><a href="subtopic1.html">Career Paths</a></li>
@@ -338,8 +358,8 @@
           </ul>
         </div>
       </div>
-      <hr>
-      <p class="small mb-0">&copy; <span class="js-year">2026</span> Career Prep Hub. Student project.</p>
+      <hr class="border-secondary border-opacity-25 my-3">
+      <p class="small mb-0 opacity-75">&copy; <span class="js-year">2026</span> Career Prep Hub. Student project.</p>
     </div>
   </footer>
 
