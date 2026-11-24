@@ -1,4 +1,4 @@
-/* Career Prep Hub - Career Paths page: interactive role matcher (ES6) */
+/* Career Prep Hub - Career Paths page: interactive role matcher with Local/Session Storage (ES6) */
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = Array.from(document.querySelectorAll(".interest-btn"));
   const resultBox = document.getElementById("matchResult");
@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const descEl = document.getElementById("matchDesc");
   const skillsEl = document.getElementById("matchSkills");
   if (!buttons.length || !resultBox) return;
+
+  const STORAGE_KEY = "cph_selected_interest";
 
   const paths = {
     defend: {
@@ -30,23 +32,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const key = btn.getAttribute("data-interest");
-      const data = paths[key];
-      if (!data) return;
+  const selectTrack = (key) => {
+    const data = paths[key];
+    if (!data) return;
 
-      buttons.forEach((b) => {
-        const active = b === btn;
-        b.classList.toggle("btn-clay", active);
-        b.classList.toggle("btn-blue", !active);
-        b.setAttribute("aria-pressed", active ? "true" : "false");
-      });
-
-      titleEl.textContent = data.title;
-      descEl.textContent = data.desc;
-      skillsEl.textContent = data.skills;
-      resultBox.classList.remove("d-none");
+    buttons.forEach((b) => {
+      const active = b.getAttribute("data-interest") === key;
+      b.classList.toggle("btn-clay", active);
+      b.classList.toggle("btn-blue", !active);
+      b.setAttribute("aria-pressed", active ? "true" : "false");
     });
+
+    titleEl.textContent = data.title;
+    descEl.textContent = data.desc;
+    skillsEl.textContent = data.skills;
+    resultBox.classList.remove("d-none");
+
+    try {
+      localStorage.setItem(STORAGE_KEY, key);
+      sessionStorage.setItem(STORAGE_KEY, key);
+    } catch (e) {}
+  };
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => selectTrack(btn.getAttribute("data-interest")));
   });
+
+  // Restore previously selected career track from storage
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY);
+    if (saved && paths[saved]) selectTrack(saved);
+  } catch (e) {}
 });

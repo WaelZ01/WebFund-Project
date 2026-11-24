@@ -1,4 +1,4 @@
-/* Career Prep Hub - Interview page: STAR builder and practice questions (ES6) */
+/* Career Prep Hub - Interview page: STAR builder & practice questions with Local/Session Storage (ES6) */
 document.addEventListener("DOMContentLoaded", () => {
   // ---------- STAR answer builder ----------
   const inputs = Array.from(document.querySelectorAll(".star-input"));
@@ -8,34 +8,68 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearBtn = document.getElementById("starClear");
   const msg = document.getElementById("starMsg");
   const placeholder = "Start typing above to see your answer here.";
+  const STAR_KEY = "cph_star_answer";
 
   const buildAnswer = () =>
     inputs.map((i) => i.value.trim()).filter(Boolean).join(" ");
 
-  const updateStar = () => {
+  const saveStar = () => {
+    try {
+      const data = {};
+      inputs.forEach((i) => { data[i.id] = i.value; });
+      const json = JSON.stringify(data);
+      localStorage.setItem(STAR_KEY, json);
+      sessionStorage.setItem(STAR_KEY, json);
+    } catch (e) {}
+  };
+
+  const loadStar = () => {
+    try {
+      const raw = localStorage.getItem(STAR_KEY) || sessionStorage.getItem(STAR_KEY);
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      if (data && typeof data === "object") {
+        inputs.forEach((i) => {
+          if (typeof data[i.id] === "string") i.value = data[i.id];
+        });
+      }
+    } catch (e) {}
+  };
+
+  const updateStar = (shouldSave = true) => {
     const text = buildAnswer();
     const words = text ? text.split(/\s+/).length : 0;
     preview.textContent = text || placeholder;
-    count.textContent = `${words} word${words === 1 ? "" : "s"}. Aim for roughly 150 to 250 words, about one to two minutes when spoken.`;
+    count.textContent = `${words} word${words === 1 ? "" : "s"} (Saved in Local Storage). Aim for roughly 150 to 250 words, about one to two minutes when spoken.`;
     msg.textContent = "";
+    if (shouldSave) saveStar();
   };
 
   if (inputs.length) {
-    inputs.forEach((i) => i.addEventListener("input", updateStar));
+    loadStar();
+    updateStar(false);
+
+    inputs.forEach((i) => i.addEventListener("input", () => updateStar(true)));
 
     clearBtn.addEventListener("click", () => {
       inputs.forEach((i) => { i.value = ""; });
-      updateStar();
+      try {
+        localStorage.removeItem(STAR_KEY);
+        sessionStorage.removeItem(STAR_KEY);
+      } catch (e) {}
+      updateStar(false);
+      msg.textContent = "Cleared from Local Storage.";
     });
 
     copyBtn.addEventListener("click", async () => {
       const text = buildAnswer();
       if (!text) { msg.textContent = "Write something first."; return; }
+      saveStar();
       try {
         await navigator.clipboard.writeText(text);
-        msg.textContent = "Copied!";
+        msg.textContent = "Saved & copied!";
       } catch (e) {
-        msg.textContent = "Copy is not available. Please select the text and copy it.";
+        msg.textContent = "Saved to Local Storage! Select the text to copy it.";
       }
     });
   }

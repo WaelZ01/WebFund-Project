@@ -279,14 +279,14 @@
                       </ul>
                     </div>
                     <div class="mt-4 pt-3 border-top border-light border-opacity-10 small opacity-75">
-                      <i class="bi bi-shield-check me-1" style="color:var(--clay)"></i> Demo form: no personal data is stored or transmitted.
+                      <i class="bi bi-hdd-stack-fill me-1" style="color:var(--peach)"></i> Submitted data is saved in Local Storage &amp; Session Storage and displayed on the page.
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-7">
                   <div class="register-main">
                     <h2 id="register-title" class="h3 mb-1">Register your interest</h2>
-                    <p class="field-hint mb-4">All fields are required. This is a demonstration form: nothing is stored or sent.</p>
+                    <p class="field-hint mb-4">All fields are required. Your submitted details are stored in Local Storage &amp; Session Storage and displayed below.</p>
 
                     <div id="formSuccess" class="alert alert-success d-none" role="status"></div>
                     <div id="formError" class="alert alert-danger d-none" role="alert"></div>
@@ -318,8 +318,35 @@
                         <div class="invalid-feedback" id="emailError"></div>
                         <div class="field-hint">For example name@example.com.</div>
                       </div>
-                      <button type="submit" class="btn btn-clay"><i class="bi bi-send-fill me-1"></i> Register now</button>
+                      <div class="d-flex flex-wrap gap-2">
+                        <button type="submit" class="btn btn-clay"><i class="bi bi-send-fill me-1"></i> Register now</button>
+                        <button type="button" class="btn btn-blue" id="loadSavedBtn"><i class="bi bi-person-check-fill me-1"></i> Show saved user</button>
+                        <button type="button" class="btn btn-outline-secondary rounded-pill px-3" id="clearSavedBtn"><i class="bi bi-trash3 me-1"></i> Clear stored data</button>
+                      </div>
                     </form>
+
+                    <!-- Stored Registration Data Display (Local Storage & Session Storage) -->
+                    <div id="savedRegistrationPanel" class="mt-4 pt-4 border-top d-none" aria-live="polite">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                        <h3 class="h5 mb-0"><i class="bi bi-database-check me-2" style="color:var(--clay)"></i>Stored Registration Information</h3>
+                        <span class="step-badge">Saved in Local &amp; Session Storage</span>
+                      </div>
+                      <p class="field-hint mb-3">Below is the submitted student information retrieved from browser storage:</p>
+                      <div class="table-responsive">
+                        <table class="table table-sand align-middle mb-0">
+                          <thead>
+                            <tr>
+                              <th scope="col">First Name</th>
+                              <th scope="col">Last Name</th>
+                              <th scope="col">Mobile</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Submitted</th>
+                            </tr>
+                          </thead>
+                          <tbody id="registrationsTableBody"></tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

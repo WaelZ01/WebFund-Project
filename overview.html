@@ -202,7 +202,7 @@
                 <table class="table table-sand align-middle mb-0">
                   <thead><tr><th scope="col">Requirement</th><th scope="col">Description in Career Prep Hub</th></tr></thead>
                   <tbody>
-                    <tr><th scope="row">User Registration</th><td>Registration form on <code>home.html</code> collecting First Name, Last Name, Mobile Number and Email Address.</td></tr>
+                    <tr><th scope="row">User Registration</th><td>Registration form on <code>home.html</code> collecting First Name, Last Name, Mobile Number and Email Address, storing submitted data in <code>localStorage</code> and <code>sessionStorage</code> and displaying it in a table below the form.</td></tr>
                     <tr><th scope="row">Form Validation</th><td>JavaScript validation enforcing First Name (&ge;3 characters), Last Name (&ge;3 characters), Mobile Number (exactly 8 digits) and valid Email format, with clear success and error messages.</td></tr>
                     <tr><th scope="row">Navigation System</th><td>Shared floating liquid-glass navigation bar and footer across all 7 pages with active page highlighting and mobile hamburger menu.</td></tr>
                     <tr><th scope="row">Interactive Features</th><td>Auto-playing educational carousel on <code>home.html</code>, Career Path role matcher on <code>subtopic1.html</code>, 8-item CV readiness checklist with progress bar on <code>subtopic2.html</code>, and Technical Q&amp;A accordion, STAR answer builder and practice question generator on <code>subtopic3.html</code>.</td></tr>
@@ -220,7 +220,7 @@
                   <tbody>
                     <tr><th scope="row">Performance</th><td>Single shared stylesheet (<code>css/style.css</code>), lightweight vector SVGs, compressed local images with <code>loading="lazy"</code> and fast page loads.</td></tr>
                     <tr><th scope="row">Accessibility</th><td>Semantic HTML5 tags, skip-to-content link, visible <code>:focus-visible</code> outlines, descriptive image <code>alt</code> text, <code>aria-live</code> status messages and <code>prefers-reduced-motion</code> support.</td></tr>
-                    <tr><th scope="row">Security</th><td>Input sanitization on the mobile number field (digits only) and strict client-side processing where no personal student data is stored or transmitted externally.</td></tr>
+                    <tr><th scope="row">Security</th><td>Input sanitization on the mobile number field (digits only) and client-side browser storage (<code>localStorage</code> / <code>sessionStorage</code>) with a clear button so users control their stored data without external transmission.</td></tr>
                     <tr><th scope="row">Usability</th><td>Clear visual hierarchy, consistent Polytechnic Navy &amp; Cyan colour theme, intuitive card layouts and immediate inline feedback beside each form field.</td></tr>
                     <tr><th scope="row">Responsiveness</th><td>Adapts seamlessly across Desktop (&ge;992 px), Tablet (768&ndash;991 px) and Mobile (&lt;768 px) screens using the Bootstrap 5 grid system and CSS media queries.</td></tr>
                   </tbody>
