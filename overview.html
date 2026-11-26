@@ -128,6 +128,78 @@
           </div>
         </div>
 
+        <!-- Learning Outcomes Assessed (CILO 1-5) -->
+        <div class="bento-panel mt-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+            <h3 class="h5 mb-0"><i class="bi bi-award-fill me-2" style="color:var(--clay)"></i>Learning Outcomes Assessed (CILO 1&ndash;5)</h3>
+            <span class="step-badge">Course Alignment</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-sand align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">CILO</th>
+                  <th scope="col">Learning Outcome</th>
+                  <th scope="col">How We Achieved It in Career Prep Hub</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Design and structure a multi-page website</td>
+                  <td>Planned and built a 7-page architecture (<code>home.html</code>, 3 career subtopic pages and 3 documentation pages) linked by a global navigation bar, footer and visual site map.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Implement consistent and maintainable styling and page structure</td>
+                  <td>Centralised all styles in one external stylesheet (<code>css/style.css</code>) using CSS <code>:root</code> variables for the Polytechnic Navy &amp; Cyan palette, Outfit headings, Bento cards and Bootstrap 5 grid layouts.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Provide user interactivity in a website</td>
+                  <td>Developed modular ES6 scripts (<code>main.js</code>, <code>subtopic1.js</code>, <code>subtopic2.js</code>, <code>subtopic3.js</code>) for real-time form validation, Local/Session Storage persistence, an auto-playing carousel, a career role matcher, a CV progress checklist, a technical Q&amp;A accordion, a STAR answer builder and a practice question generator.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Demonstrate knowledge of the fundamentals of website implementation</td>
+                  <td>Used semantic HTML5 tags, responsive breakpoints (Desktop, Tablet, Mobile), WCAG colour contrast verification and an 11-case Chromium testing record.</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Follow ethical and legal best practices in web design and development</td>
+                  <td>Documented all 3 AI tools, prompts and modifications transparently, verified all technical explanations, credited external libraries and Unsplash images, and implemented accessible keyboard and screen-reader support.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Technical Implementation & Challenges We Faced -->
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6">
+            <div class="bento-panel">
+              <h3 class="h5 mb-3"><i class="bi bi-code-square me-2" style="color:var(--clay)"></i>Technical Implementation</h3>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>HTML5 Semantic Architecture:</strong> Built 7 valid HTML5 pages using <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;figure&gt;</code> and <code>&lt;footer&gt;</code> landmarks with ARIA labels and a skip-to-content link.</li>
+                <li class="mb-2"><strong>CSS3 &amp; Liquid-Glass UI System:</strong> Implemented a floating liquid-glass capsule navbar (<code>backdrop-filter: blur(22px) saturate(180%)</code>), custom Bento cards with top gradient borders and responsive media queries.</li>
+                <li class="mb-2"><strong>Bootstrap 5.3 Integration:</strong> Utilised the 12-column responsive grid (<code>row</code>, <code>col-md-6</code>, <code>col-lg-4</code>), collapsible mobile navbar, auto-playing Carousel, Accordion, Progress Bar and responsive tables.</li>
+                <li><strong>JavaScript ES6 &amp; Browser Storage:</strong> Implemented regex and length validators on the registration form and used <code>localStorage</code> and <code>sessionStorage</code> (with <code>JSON.stringify</code> and <code>JSON.parse</code>) to store, display, reload and clear submitted student data across forms.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bento-panel">
+              <h3 class="h5 mb-3"><i class="bi bi-exclamation-triangle-fill me-2" style="color:var(--clay)"></i>Challenges We Faced &amp; Solutions</h3>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>1. Mobile Input Validation Order Bug:</strong> Initially, the validation listener ran before non-digit characters were stripped, leaving valid 8-digit numbers marked invalid. <em>Solution:</em> Reordered the listeners in <code>js/main.js</code> and removed hard truncation so 7-digit and 9-digit test cases trigger proper error messages.</li>
+                <li class="mb-2"><strong>2. Button Colour Contrast (WCAG AA):</strong> Our contrast audit revealed white text on an earlier orange button reached only <code>3.08:1</code> (below the <code>4.5:1</code> AA minimum). <em>Solution:</em> Switched to the Polytechnic Navy &amp; Cyan palette where primary buttons reach <code>4.60:1</code> (AA) and headings exceed <code>13:1</code> (AAA).</li>
+                <li class="mb-2"><strong>3. Generic AI Content Drafts:</strong> Early AI drafts produced generic US career advice and unverified salary figures. <em>Solution:</em> Fact-checked every section and rewrote examples around Bahrain Polytechnic modules (Packet Tracer, Wireshark, web projects).</li>
+                <li><strong>4. Team Git Consistency &amp; Storage Persistence:</strong> Coordinating 4 members editing 7 pages required shared conventions. <em>Solution:</em> Used one shared stylesheet and added full <code>localStorage</code> / <code>sessionStorage</code> display tables for form submissions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- Pages directory -->
         <h3 class="h5 mt-5 mb-3">Pages in this website</h3>
         <div class="row g-3">
